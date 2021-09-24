@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Короткий довідник по MD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Що таке MD <em>(markdown)</em> ?</h1>
+            <p>Це полегшена мова розмітки даних, яку створено для полегшення читабельності та зручності публікації з подальшим перетворенням її на XHTML або HTML. Чимало ідей для мови позичено з існуючих домовленостей у розмітці тексту в електронних листах. Першу реалізацію Markdown написано <a href="https://en.wikipedia.org/wiki/John_Gruber">Джоном Грубером</a> на Perl, але з часом з'явились багато реалізацій від сторонніх розробників.</p>
+        </section>
+        <section>
+            <h1>Де використовується MD?</h1>
+            <p><em>Markdown</em> це неофіційний стандарт для багатьох сайтів пов'язаних з програмуванням, наприклад GitHub, Stack Overflow. Також за замовчуванням md підтримують багато додатків для комунікації, наприклад Skype, Slack, Reddit.</p>
+        </section>
+        <section>
+            <h1>Приклади використання MD</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Запис в MD</th>
+                        <th>Результат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>*Курсив*</code></td>
+                        <td><em>Курсив</em></td>
+                    </tr>
+                    <tr>
+                        <td><code>**Жирний**</code></td>
+                        <td><b>Жирний</b></td>
+                    </tr>
+                    <tr>
+                        <td><code># Заголовок 1</code></td>
+                        <td><h1>Заголовок 1</h1></td>
+                    </tr>
+                    <tr>
+                        <td><code>## Заголовок 2</code></td>
+                        <td><h2>Заголовок 2</h2></td>
+                    </tr>
+                    <tr>
+                        <td><code>[Посилання](https://github.com/ITBA-PENGUINS/)</code></td>
+                        <td><a href="https://github.com/ITBA-PENGUINS/">Посилання</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>![Image](http://url/logo.png)</code></td>
+                        <td><img src="logo.png" alt="" width="100px"></td>
+                    </tr>
+                    <tr>
+                        <td><code>> Цитата</code></td>
+                        <td><blockquote>Цитата</blockquote></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                * Пункт списка<br>* Пункт списка <br>* Пункт списка
+                            </code>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Пункт списка</li>
+                                <li>Пункт списка</li>
+                                <li>Пункт списка</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                1.Пункт списка<br>2.Пункт списка <br>3.Пункт списка
+                            </code>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Пункт списка</li>
+                                <li>Пункт списка</li>
+                                <li>Пункт списка</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>Горизонтальна лінія:<br>---</code></td>
+                        <td><hr></td>
+                    </tr>
+                    <tr>
+                        <td><code>`строка коду` (зворотні лапки)</code></td>
+                        <td><code>строка коду</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+</body>
+</html>
