@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<formats>
+    <format name="html">
+        <fullName>HyperText Markup Language</fullName>
+        <type>Мова розмітки</type>
+        <mainFunction>Описує структуру документа для відображення браузером</mainFunction>
+        <purpose>Відображення даних на веб-сторінках</purpose>
+        <basedOn>SGML</basedOn>
+        <features>Має обмежений набір тегів, статичний</features>
+        <advantages>Не чутливий до регістру, універсальний, підтримується найбільшою кількістю програмних продуктів, підтримка одинарних тегів</advantages>
+        <deficiencies>Не зручний для сприйняття людиною, важко читати</deficiencies>
+    </format>
+    <format name="md">
+        <fullName>Markdown</fullName>
+        <type>Мова розмітки</type>
+        <mainFunction>Описує структуру і оформлення документа для подальшої конвертації в HTML</mainFunction>
+        <purpose>Більш просте і швидке форматування тексту</purpose>
+        <basedOn>HTML</basedOn>
+        <features>Максимально простий у опануванні</features>
+        <advantages>Універсальний, підтримується найбільшою кількістю програмних продуктів, легка конвертація</advantages>
+        <deficiencies>Необхідно суворо дотримуватися правил синтаксису</deficiencies>
+    </format>
+    <format name="xml">
+        <fullName>eXtensible Markup Language</fullName>
+        <type>Мова розмітки</type>
+        <mainFunction>Визначає набір правил для кодування документів в форматі, який читається як людиною так і машиною</mainFunction>
+        <purpose>Отримання та відправка даних с сервера, зберігання структурованих даних</purpose>
+        <basedOn>SGML</basedOn>
+        <features>Зручний для сприйняття людиною, є можливість створювати власні теги, динамічний</features>
+        <advantages>Змішаний контент, збереження даних у текстовому форматі, зручна візуалізація деревоподібної структури в браузерах, можливість створення власних тегів</advantages>
+        <deficiencies>Великий розмір файлу, чутливий до регістру</deficiencies>
+    </format>
+    <format name="json">
+        <fullName>JavaScript Object Notation</fullName>
+        <type>Текстовий формат обміну даними</type>
+        <mainFunction>Використовує зрозумілий для сприйняття людиною текст для передачі об'єктів даних</mainFunction>
+        <purpose>Отримання та відправка даних с сервера, обмін даними між різними додатками</purpose>
+        <basedOn>JavaScript</basedOn>
+        <features>Широко застосовується для обміну даними між різними додатками</features>
+        <advantages>Скорочений синтаксис при однакових обсягах інформації, як результат зменшення розміру файлу і підвищення швидкості передачі даних</advantages>
+        <deficiencies>Не зручний для сприйняття людиною, важко читати, легко порушити структуру</deficiencies>
+    </format>
+</formats>
