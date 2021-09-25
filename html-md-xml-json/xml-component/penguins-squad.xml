@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<penguinsSquad>
+    <squadUnit name="Roman Zaloha">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Sviatoslav">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Vitalii">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Микола Vepryk">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Оleksandr">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Ярослав">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Oleksii Kosinov">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Serhii">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Serhii Pronin">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Левчук Андрей">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Artem Ste">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Svitlana">
+        <skillLevel>[][]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Hennadii Kuzmenko">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Oleksandr Melnichyn">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Oleksii308">
+        <skillLevel>[]</skillLevel>
+    </squadUnit>
+    <squadUnit name="Alex Samofalov">
+        <skillLevel>""</skillLevel>
+    </squadUnit>
+</penguinsSquad>
