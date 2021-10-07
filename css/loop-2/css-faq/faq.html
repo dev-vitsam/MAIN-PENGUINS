@@ -33,64 +33,37 @@
                 елемента,
                 у випадку з <code>relative</code> змін в макеті довкола елемента немає
             </blockquote>
+            <div class="position-container">
+                <div class="position-block">Я звичайний блок з <code>position: static</code> як і у всіх блоків за
+                    замовчуванням.
+                </div>
+            </div>
+            <div class="position-container">
+                <div class="extra-padding">Я його елемент <br>вищого рівня ---></div>
+                <div class="position-block-absolute">Я блок з <code>position: absolute; left: 200px; bottom: 10px;</code>. Я
+                    не
+                    впливаю
+                    на оточуючі блоки, та зміщуюся відносно елементу вищого рівня на відстані, вказані за допомогою
+                    властивостей
+                    <code>left, right, top, bottom</code>. Елемент вищого рівня має отримати властивість
+                    <code>position: relative</code>, інакше я буду позиціонуватися відносно всієї сторінки взагалі.
+                </div>
+            </div>
+            <div class="position-container">
+                <div class="position-block-relative">Я блок з <code>position: relative; right: 50px; top: 20px;</code>. Я
+                    впливаю
+                    на оточуючі блоки, та зміщуюся відносно своєї позиції на відстані, вказані за допомогою властивостей
+                    <code>left, right, top, bottom</code>.
+                </div>
+            </div>
             <p>Дельніше можна прочитати за
                 <a
                     href="https://leannezhang.medium.com/difference-between-css-position-absolute-versus-relative-35f064384c6">посиланням</a>
             </p>
         </section>
         <hr>
-        <article>
-            <h4>Поле для форми</h4>
-            <div class="form-area">
-                <div class="form-cage"></div>
-                <div class="form-h">Зворотній зв'язок</div>
-                <form action="#" method="POST" enctype="multipart/form-data" class="form__body">
-                    <div><input class="form-input" autocomplete="off" type="text" name="name" placeholder="Ім'я">
-                    </div>
-                    <div><input class="form-input" type="text" name="mail_phone" placeholder="E-mail чи номер телефона">
-                    </div>
-                    <div><textarea class="form-text form-input" name="text"
-                            placeholder="Ваші побажання"></textarea></textarea>
-                    </div>
-                    <button type="submit" class="form-btn">відправити</button>
-                </form>
-            </div>
-            </div>
-            <h4>Примітки до форми:</h4>
-            <ul>
-                <li>клас<code>"form-cage"</code> контейнер для форми, додає відступи</li>
-                <li>клас<code>"form-h"</code> стилізує заголовок форми</li>
-                <li>клас<code>"form-input" "form-text"</code> стилізація полів вводу форми</li>
-                <li>клас<code>"form-btn"</code> стиль кнопки відправки</li>
-            </ul>
-            <hr>
-        </article>
+        
     </main>
-    <section class="section-container">
-        <h4>CSS позиціонування. Різниця між <code>relative</code> та <code>absolute</code></h4>
-        <div class="position-container">
-            <div class="position-block">Я звичайний блок з <code>position: static</code> як і у всіх блоків за
-                замовчуванням.
-            </div>
-        </div>
-        <div class="position-container">
-            <div class="extra-padding">Я його елемент <br>вищого рівня ---></div>
-            <div class="position-block-absolute">Я блок з <code>position: absolute; left: 200px; bottom: 10px;</code>. Я
-                не
-                впливаю
-                на оточуючі блоки, та зміщуюся відносно елементу вищого рівня на відстані, вказані за допомогою
-                властивостей
-                <code>left, right, top, bottom</code>. Елемент вищого рівня має отримати властивість
-                <code>position: relative</code>, інакше я буду позиціонуватися відносно всієї сторінки взагалі.
-            </div>
-        </div>
-        <div class="position-container">
-            <div class="position-block-relative">Я блок з <code>position: relative; right: 50px; top: 20px;</code>. Я
-                впливаю
-                на оточуючі блоки, та зміщуюся відносно своєї позиції на відстані, вказані за допомогою властивостей
-                <code>left, right, top, bottom</code>.
-            </div>
-        </div>
-    </section>
+    
 </body>
 </html>
