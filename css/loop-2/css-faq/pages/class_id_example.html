@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Приклад з підключенням class та id</title>
+   <link rel="stylesheet" href="../css/penguins-ui.css">
+
+<!-- ===== Підключення стилю ========================================== -->
+   <style>
+      details.code_on_page {
+         background-color: #8E8E8E;
+      }
+      summary.code_on_page {
+         background-color: #D8D8D8;
+      }
+/* ===== Звичайний параграф ============================================ */
+      p {
+         color: darkred;
+         }
+/* ===== Параграф з class cite ============================================ */
+      .cite {
+         color: navy;
+         margin-left: 20px;
+         border-left: 1px solid navy;
+         padding-left: 15px;
+         }
+/* ===== Параграф з class Id ============================================= */
+      #cite_special {
+         color: darkgreen;
+         margin-left: 20px;
+         border-left: 5px solid darkgreen;
+         padding-left: 15px;
+         }
+   </style>
+</head>
+
+<!-- ===== Початок BODY =============================================== -->
+
+<body>
+   <main>
+
+<!-- ===== Секція опису class ========================================= -->
+      
+      <section class="p_ui">
+         <h1 class="p_ui">Приклади по підключенню стилів селекторами class та id</h1>
+         <hr>
+
+         <h2>Підключення класу</h2>
+         <blockquote>
+            Створений клас можна застосовувати до будь-яких елементів веб-сторінки.
+            Ви можете надавати стиль не тільки цілим заголовкам і абзацам, а й
+            окремим фрагментам сторінки, наприклад, словам.
+         </blockquote>
+         <!-- <hr> -->
+      </section>
+
+<!-- ===== Секція з прикладом підключенного класу ===================== -->
+
+      <section class="p_ui">
+         <blockquote>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+         </blockquote>
+      </section>
+      
+<!-- ===== Секція коду class ========================================== -->
+
+      <section class="p_ui">
+         <blockquote>
+               <details class="code_on_page">
+                  <summary class="code_on_page">
+                     Вище ви бачите приклад, який є результатом вкладеного тут коду:
+                  </summary>
+                  
+                  <samp>
+                     <pre>
+                        &lt!DOCTYPE html&gt
+                        &lthtml&gt
+                           &lthead&gt
+                              &ltmeta charset="utf-8"&gt
+                              &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+                              &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                              
+                              &lttitle&gt
+                                 Приклад з підключенням class
+                              &lt/title&gt
+                              
+                              &ltstyle&gt
+                                 p {
+                                    color: darkred;
+                                    }
+
+                                 .cite {
+                                    color: navy;
+                                    margin-left: 20px;
+                                    border-left: 1px solid navy;
+                                    padding-left: 15px;
+                                    } 
+                              &lt/style&gt
+                           &lt/head&gt
+
+                           &ltbody&gt
+                              &ltp&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                           &lt/body&gt
+                        &lt/html&gt
+                     </pre>
+                  </samp>
+               </details>
+         </blockquote>
+         <hr>
+      </section>
+
+<!-- ================================================================== -->
+<!-- ================================================================== -->
+
+<!-- ===== Секція опису Id ============================================ -->
+
+      <section class="p_ui">
+         <h2>Підключення id</h2>
+         <blockquote>
+            ID - це унікальна назва елемента на веб-сторінці,
+            яке повинно зустрічатися на ній тільки один раз.
+         </blockquote>
+      </section>
+
+<!-- ===== Секція з прикладом підключенного Id ======================== -->
+
+      <section class="p_ui">
+         <blockquote>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite" id="cite_special">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+            <p class="cite">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+         </blockquote>
+      </section>
+
+<!-- ===== Секція коду Id ============================================= -->
+      
+      <section class="p_ui">
+         <blockquote>
+               <details class="code_on_page">
+                  <summary class="code_on_page">
+                     Вище ви бачите приклад, який є результатом вкладеного тут коду:
+                  </summary>
+
+                  <samp>
+                     <pre>
+                        &lt!DOCTYPE html&gt
+                        &lthtml&gt
+                           &lthead&gt
+                              &ltmeta charset="utf-8"&gt
+                              &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+                              &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                              
+                              &lttitle&gt
+                                 Приклад з підключенням id
+                              &lt/title&gt
+                              
+                              &ltstyle&gt
+                                 p {
+                                    color: darkred;
+                                    }
+
+                                 .cite {
+                                    color: navy;
+                                    margin-left: 20px;
+                                    border-left: 1px solid navy;
+                                    padding-left: 15px;
+                                    } 
+
+                                 #cite_special {
+                                    color: darkgreen;
+                                    margin-left: 20px;
+                                    border-left: 5px solid darkgreen;
+                                    padding-left: 15px;
+                                    }
+                              &lt/style&gt
+                           &lt/head&gt
+
+                           &ltbody&gt
+                              &ltp&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite" id="cite_special"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                              &ltp class="cite"&gt
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              &lt/p&gt
+                           &lt/body&gt
+                        &lt/html&gt
+                     </pre>
+                  </samp>
+               </details>
+         </blockquote>
+         <hr>
+      </section>
+
+   </main>   
+</body>
+</html>
