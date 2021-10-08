@@ -1,2 +1,2 @@
 ## Penguins squad page
-*based on Sigma CSS library[Sigma CSS library](https://github.com/ITBA-SIGMA/MAIN-SIGMA/tree/main/workFolder/week01)*
+*based on [Sigma CSS library](https://github.com/ITBA-SIGMA/MAIN-SIGMA/tree/main/workFolder/week01)*
