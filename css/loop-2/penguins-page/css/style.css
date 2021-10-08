@@ -1,0 +1,17 @@
+#grid .content-wrapper .row .col {
+    background-color: transparent;
+    border: none;
+}
+#grid .row div {
+    height: auto;
+}
+#grid .content-wrapper .row .col::before {
+    display: none;
+}
+#grid .content-wrapper .row .col:first-child {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} 
