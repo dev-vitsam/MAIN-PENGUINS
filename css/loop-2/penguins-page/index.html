@@ -7,7 +7,6 @@
     <title>Penguins squad</title>
     <link rel="stylesheet" href="css/sigma.lib.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body id="theme">
     <header class="header">
@@ -35,6 +34,13 @@
         </div>
       </header>
       <main class="main flex">
+        <nav class="left-sidebar">
+          <ul>
+            <li><a href="#">ГОЛОВНА</a></li>
+            <li><a href="#about">ХТО МИ?</a></li>
+            <li><a href="#list">КОМАНДА</a></li>
+          </ul>
+        </nav>
         <section>
         <article id="grid">
           <div class="content-wrapper">
@@ -47,7 +53,9 @@
                 <img src="img/study.svg" alt="" width="600px">
               </div>
             </div>
-            <div class="row">
+            </article>
+            <article>
+            <div class="row" id="about">
               <div class="col">
                 <h2>Хто ми?</h2>
                 <p>
@@ -61,50 +69,91 @@
             </div>
           </div>
         </article>
-        <article>
-    <div class='wrapper'>
-      <ul class=''>
-        <li>[] Sviatoslav</li>
-        <li>[] Vitalii Samardak</li>
-        <li>[] Микола Vepryk</li>
-        <li>[] Оleksandr Kupchenko</li>
-        <li>[] Ярослав Кузик-Чорнобривий</li>
-        <li>[][]Svitlana</li>
-        <li>[][]Artem Ste</li>
-        <li>[][] Левчук Андрей</li>
-        <li>[][] Serhii Pronin</li>
-        <li>[][] Serhii</li>
-        <li>[][] Oleksii Kosinov</li>
-        <li>[]Hennadii Kuzmenko</li>
-        <li>[]Oleksandr Melnichyn</li>
-        <li>[]Oleksii308 Oleksii Luchaninov</li>
-        <li>Alex Samofalov</li>
-        <li>[]Roman Zaloha</li>
-        <li>[]Yurii</li>
-      </ul>
-    </div>
-    </article>
-    </section>
+    <article id='list'>
+      <h3>КОМАНДА THE PENGUINS SQUAD</h3>
+      <div class="content-wrapper">
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Sviatoslav</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Микола Vepryk</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Оleksandr Kupchenko</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Ярослав Кузик-Чорнобривий</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Svitlana</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Artem Ste</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Левчук Андрей</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Serhii Pronin</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Serhii</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[][] Oleksii Kosinov</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Hennadii Kuzmenko</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Oleksandr Melnichyn</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Oleksii Luchaninov</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">Alex Samofalov</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Roman Zaloha</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Yurii</button></div>
+          </div>
+          <div>
+            <div><img class="avatar-circle lg" src="img/avatar_circle.webp"></div>
+            <div><button class="btn btn-primary">[] Vitalii Samardak</button></div>
+          </div>
+      </div>
+  </article>
+  </section>
     </main>
     <div class="footer-basic">
       <footer>
-        <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a>
-          <a href="#"><i class="icon ion-social-twitter"></i></a>
-          <a href="#"><i class="icon ion-social-facebook"></i></a>
-        </div>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Головна</a></li>
           <li class="list-inline-item"><a href="https://github.com/ITBA-PENGUINS/MAIN-PENGUINS/tree/dev">Проекти</a></li>
-          <li class="list-inline-item"><a href="#">Команда</a></li>
-          <li class="list-inline-item"><a href="#">Про нас</a></li>
+          <li class="list-inline-item"><a href="#list">Команда</a></li>
+          <li class="list-inline-item"><a href="#about">Про нас</a></li>
         </ul>
         <p class="copyright">Зачаровано PENGUINS © 2021</p>
       </footer>
     </div>
-        
-
-      
-    
 </body>
 </html>
