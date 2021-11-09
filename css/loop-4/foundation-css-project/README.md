@@ -1,1 +1,1 @@
-#Project based on Foudation CSS with custom elements styling
+# Project based on Foudation CSS with custom elements styling
