@@ -1,0 +1,69 @@
+header {
+  height: 100vh;
+  background: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+}
+
+header .title-bar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem;
+}
+
+header .title-bar img {
+  margin: 0 auto 0 .5rem;
+}
+
+header .title-bar .menu-icon-bullet {
+  background-image: url("../img/menu-icon.svg");
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+}
+
+header .top-bar {
+  background-color: rgba(15, 15, 15, 0.6);
+}
+
+header .top-bar ul {
+  background-color: inherit;
+}
+
+header .top-bar ul li a {
+  color: #eee;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .top-bar ul li a:hover {
+  border-bottom: 2px solid #eee;
+  background-color: rgba(238, 238, 238, 0.15);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .main-heading {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .main-heading h1 {
+  font-family: 'Mohave', sans-serif;
+  color: #f2f2f2;
+  font-size: 6rem;
+}
+
+header .main-heading button {
+  border-radius: 8px;
+}
+/*# sourceMappingURL=main.css.map */
