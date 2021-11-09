@@ -1,0 +1,42 @@
+body {
+    background-color: #1F1F1F;
+}
+main {
+    .section-heading {
+        font-size: 20rem;
+        color: rgba($color: #f2f2f2, $alpha: .1);
+        font-family: 'Mohave', sans-serif;
+    }
+    .models-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .accordion {
+        background-color: transparent;
+        .accordion-title {
+            border: transparent;
+            font-size: 1.6rem;
+            color: #CF9F52;
+            
+            :last-child:not(.is-active) > & {
+                border-bottom: transparent;
+            }
+            &:hover {
+                border-bottom: 2px solid #eee;
+                background-color: rgba($color: #eee, $alpha: .15);
+                transition: all .3s;
+            }
+            &:focus {
+                font-weight: 700;
+            }
+        }
+        .accordion-content {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            img {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}

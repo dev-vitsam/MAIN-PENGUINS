@@ -66,4 +66,61 @@ header .main-heading h1 {
 header .main-heading button {
   border-radius: 8px;
 }
+
+body {
+  background-color: #1F1F1F;
+}
+
+main .section-heading {
+  font-size: 20rem;
+  color: rgba(242, 242, 242, 0.1);
+  font-family: 'Mohave', sans-serif;
+}
+
+main .models-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .accordion {
+  background-color: transparent;
+}
+
+main .accordion .accordion-title {
+  border: transparent;
+  font-size: 1.6rem;
+  color: #CF9F52;
+}
+
+:last-child:not(.is-active) > main .accordion .accordion-title {
+  border-bottom: transparent;
+}
+
+main .accordion .accordion-title:hover {
+  border-bottom: 2px solid #eee;
+  background-color: rgba(238, 238, 238, 0.15);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .accordion .accordion-title:focus {
+  font-weight: 700;
+}
+
+main .accordion .accordion-content {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+main .accordion .accordion-content img {
+  margin-bottom: .5rem;
+}
 /*# sourceMappingURL=main.css.map */
