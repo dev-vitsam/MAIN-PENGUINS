@@ -1,11 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #1F1F1F;
+    
 }
 main {
+        
     .section-heading {
-        font-size: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16rem;
         color: rgba($color: #f2f2f2, $alpha: .1);
         font-family: 'Mohave', sans-serif;
+        background-color: #0f0f0f;
+        margin-bottom: 0;
+        position: relative;
+        @media screen and (max-width: 480px) {
+            font-size: 8rem;
+        }
+        .bullet-hole {
+            opacity: .5;
+            width: 1.4rem;
+            height: 1.4rem;
+            background: url('../img/guns/bullet-hole.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bul-1 {
+            position: absolute;
+            top: 8%;
+            left: 28%;
+        }
+        .bul-2 {
+            position: absolute;
+            top: 30%;
+            left: 60%;
+        }
+        .bul-3 {
+            position: absolute;
+            top: 85%;
+            left: 40%;
+        }
+        .bul-4 {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+        }
+        .bul-5 {
+            position: absolute;
+            top: 70%;
+            left: 80%;
+        }
     }
     .models-info {
         display: flex;
@@ -14,16 +61,24 @@ main {
     }
     .accordion {
         background-color: transparent;
+
+        .accordion-item {
+            &:last-child  {
+                a {
+                    border-bottom: none;
+                }
+             } 
+        }
+        
         .accordion-title {
             border: transparent;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #CF9F52;
             
-            :last-child:not(.is-active) > & {
+            :last-child:not(.is-active)>.accordion-title {
                 border-bottom: transparent;
             }
             &:hover {
-                border-bottom: 2px solid #eee;
                 background-color: rgba($color: #eee, $alpha: .15);
                 transition: all .3s;
             }
@@ -39,4 +94,5 @@ main {
             }
         }
     }
+    
 }

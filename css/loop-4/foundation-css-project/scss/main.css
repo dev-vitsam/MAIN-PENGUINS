@@ -3,8 +3,8 @@ header {
   background: url("../img/header-bg.jpg");
   background-size: cover;
   background-position: center center;
-  -webkit-box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
-          box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.5);
 }
 
 header .title-bar {
@@ -27,6 +27,9 @@ header .title-bar .menu-icon-bullet {
 
 header .top-bar {
   background-color: rgba(15, 15, 15, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 header .top-bar ul {
@@ -57,14 +60,34 @@ header .main-heading {
           justify-content: center;
 }
 
+@media screen and (max-width: 480px) {
+  header .main-heading {
+    padding-top: 3rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 header .main-heading h1 {
   font-family: 'Mohave', sans-serif;
   color: #f2f2f2;
   font-size: 6rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 480px) {
+  header .main-heading h1 {
+    font-size: 4rem;
+  }
 }
 
 header .main-heading button {
   border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,9 +95,66 @@ body {
 }
 
 main .section-heading {
-  font-size: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16rem;
   color: rgba(242, 242, 242, 0.1);
   font-family: 'Mohave', sans-serif;
+  background-color: #0f0f0f;
+  margin-bottom: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  main .section-heading {
+    font-size: 8rem;
+  }
+}
+
+main .section-heading .bullet-hole {
+  opacity: .5;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url("../img/guns/bullet-hole.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .section-heading .bul-1 {
+  position: absolute;
+  top: 8%;
+  left: 28%;
+}
+
+main .section-heading .bul-2 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+main .section-heading .bul-3 {
+  position: absolute;
+  top: 85%;
+  left: 40%;
+}
+
+main .section-heading .bul-4 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+main .section-heading .bul-5 {
+  position: absolute;
+  top: 70%;
+  left: 80%;
 }
 
 main .models-info {
@@ -94,18 +174,21 @@ main .accordion {
   background-color: transparent;
 }
 
+main .accordion .accordion-item:last-child a {
+  border-bottom: none;
+}
+
 main .accordion .accordion-title {
   border: transparent;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #CF9F52;
 }
 
-:last-child:not(.is-active) > main .accordion .accordion-title {
+main .accordion .accordion-title :last-child:not(.is-active) > .accordion-title {
   border-bottom: transparent;
 }
 
 main .accordion .accordion-title:hover {
-  border-bottom: 2px solid #eee;
   background-color: rgba(238, 238, 238, 0.15);
   -webkit-transition: all .3s;
   transition: all .3s;

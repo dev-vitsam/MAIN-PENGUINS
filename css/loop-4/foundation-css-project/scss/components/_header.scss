@@ -3,7 +3,7 @@ header {
     background: url('../img/header-bg.jpg');
     background-size: cover;
     background-position: center center;
-    box-shadow: inset 3000px 3000px rgba($color: #000000, $alpha: .6);
+    box-shadow: inset 3000px 3000px rgba($color: #000000, $alpha: .5);
     .title-bar {
         justify-content: flex-end;
         padding: 1rem;
@@ -20,6 +20,9 @@ header {
 
     .top-bar {
         background-color: rgba($color: #0f0f0f, $alpha: .6);
+        position: absolute;
+        left: 0;
+        right: 0;
         ul {
             background-color: inherit;
             li {
@@ -41,10 +44,18 @@ header {
         height: 100%;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 480px) {
+            padding-top: 3rem;
+            justify-content: flex-start;
+        }
         h1 {
             font-family: 'Mohave', sans-serif;
             color: #f2f2f2;
             font-size: 6rem;
+            line-height: 1;
+            @media screen and (max-width: 480px) {
+                font-size: 4rem;
+            }
         }
         button {
             border-radius: 8px;
