@@ -1,0 +1,192 @@
+header {
+  height: 100vh;
+  background: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.5);
+}
+
+header .title-bar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem;
+}
+
+header .title-bar img {
+  margin: 0 auto 0 .5rem;
+}
+
+header .title-bar .menu-icon-bullet {
+  background-image: url("../img/menu-icon.svg");
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+}
+
+header .top-bar {
+  background-color: rgba(15, 15, 15, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+header .top-bar ul {
+  background-color: inherit;
+}
+
+header .top-bar ul li a {
+  color: #eee;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .top-bar ul li a:hover {
+  border-bottom: 2px solid #eee;
+  background-color: rgba(238, 238, 238, 0.15);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .main-heading {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  header .main-heading {
+    margin-top: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header .main-heading h1 {
+  font-family: 'Mohave', sans-serif;
+  color: #f2f2f2;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 480px) {
+  header .main-heading h1 {
+    font-size: 4rem;
+  }
+}
+
+header .main-heading button {
+  border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1F1F1F;
+}
+
+main .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16rem;
+  color: rgba(242, 242, 242, 0.5);
+  font-family: 'Mohave', sans-serif;
+  background-color: #0f0f0f;
+  margin-bottom: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  main .section-heading {
+    font-size: 8rem;
+  }
+}
+
+main .section-heading .bullet-hole {
+  position: absolute;
+  opacity: .5;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url("../img/guns/bullet-hole.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .two-lines-heading {
+  font-size: 10rem;
+  padding: 2rem 0;
+  line-height: 1;
+}
+
+@media screen and (max-width: 480px) {
+  main .two-lines-heading {
+    font-size: 6rem;
+  }
+}
+
+main .models-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .accordion {
+  background-color: transparent;
+}
+
+main .accordion .accordion-item:last-child a {
+  border-bottom: none;
+}
+
+main .accordion .accordion-title {
+  border: transparent;
+  font-size: 1.4rem;
+  color: #CF9F52;
+}
+
+main .accordion .accordion-title :last-child:not(.is-active) > .accordion-title {
+  border-bottom: transparent;
+}
+
+main .accordion .accordion-title:hover {
+  background-color: rgba(238, 238, 238, 0.15);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .accordion .accordion-title:focus {
+  font-weight: 700;
+}
+
+main .accordion .accordion-content {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+main .accordion .accordion-content img {
+  margin-bottom: .5rem;
+}
+/*# sourceMappingURL=main.css.map */

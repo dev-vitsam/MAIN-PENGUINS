@@ -1,0 +1,65 @@
+header {
+    height: 100vh;
+    background: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 3000px 3000px rgba($color: #000000, $alpha: .5);
+    .title-bar {
+        justify-content: flex-end;
+        padding: 1rem;
+        img {
+            margin: 0 auto 0 .5rem;
+        }
+        .menu-icon-bullet {
+            background-image: url('../img/menu-icon.svg');
+            background-size: cover;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .top-bar {
+        background-color: rgba($color: #0f0f0f, $alpha: .6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        ul {
+            background-color: inherit;
+            li {
+                a {
+                    color: #eee;
+                    border-bottom: 2px solid transparent;
+                    transition: all .3s;
+                    &:hover {
+                        border-bottom: 2px solid #eee;
+                        background-color: rgba($color: #eee, $alpha: .15);
+                        transition: all .3s;
+                    }
+                }
+                
+            }
+        }
+    }
+    .main-heading {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 480px) {
+            margin-top: auto;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'Mohave', sans-serif;
+            color: #f2f2f2;
+            font-size: 6rem;
+            line-height: 1;
+            @media screen and (max-width: 480px) {
+                font-size: 4rem;
+            }
+        }
+        button {
+            border-radius: 8px;
+        }
+    }
+    
+}
