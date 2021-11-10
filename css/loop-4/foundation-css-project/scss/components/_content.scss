@@ -12,7 +12,7 @@ main {
         align-items: center;
         justify-content: center;
         font-size: 16rem;
-        color: rgba($color: #f2f2f2, $alpha: .1);
+        color: rgba($color: #f2f2f2, $alpha: .5);
         font-family: 'Mohave', sans-serif;
         background-color: #0f0f0f;
         margin-bottom: 0;
@@ -21,6 +21,7 @@ main {
             font-size: 8rem;
         }
         .bullet-hole {
+            position: absolute;
             opacity: .5;
             width: 1.4rem;
             height: 1.4rem;
@@ -28,30 +29,14 @@ main {
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .bul-1 {
-            position: absolute;
-            top: 8%;
-            left: 28%;
-        }
-        .bul-2 {
-            position: absolute;
-            top: 30%;
-            left: 60%;
-        }
-        .bul-3 {
-            position: absolute;
-            top: 85%;
-            left: 40%;
-        }
-        .bul-4 {
-            position: absolute;
-            top: 50%;
-            left: 15%;
-        }
-        .bul-5 {
-            position: absolute;
-            top: 70%;
-            left: 80%;
+        
+    }
+    .two-lines-heading {
+        font-size: 10rem;
+        padding: 2rem 0;
+        line-height: 1;
+        @media screen and (max-width: 480px) {
+            font-size: 6rem;
         }
     }
     .models-info {
