@@ -28,6 +28,7 @@
 @media screen and (max-width: 480px) {
   .dropdown button {
     width: 80%;
+    font-size: 1.4rem;
   }
 }
 
@@ -40,6 +41,7 @@
 @media screen and (max-width: 480px) {
   .dropdown .dropdown-menu {
     width: 80%;
+    font-size: 1.4rem;
   }
 }
 
