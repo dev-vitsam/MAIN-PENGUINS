@@ -1,0 +1,65 @@
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  z-index: 1000;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+.dropdown button {
+  width: 60%;
+  font-size: 1.6rem;
+  border-radius: 0px 0px 16px 16px;
+  background-color: #f2f2f2;
+  border: none;
+  color: #333;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown button {
+    width: 80%;
+  }
+}
+
+.dropdown .dropdown-menu {
+  font-size: 1.6rem;
+  border: none;
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown .dropdown-menu {
+    width: 80%;
+  }
+}
+
+.carousel .carousel-inner .carousel-caption {
+  top: 0rem;
+  bottom: auto;
+  right: 0;
+  left: 0;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel .carousel-inner h5 {
+  margin-top: 4rem;
+  font-family: 'Caveat', sans-serif;
+  font-size: 4rem;
+}
+
+.carousel .carousel-indicators {
+  top: 4rem;
+}
+/*# sourceMappingURL=style.css.map */

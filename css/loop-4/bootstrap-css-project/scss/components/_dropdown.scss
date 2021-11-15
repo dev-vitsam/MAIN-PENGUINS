@@ -1,0 +1,33 @@
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    z-index: 1000;
+    
+    margin-bottom: 4rem;
+    @media screen and (max-width: 480px) {
+        left: 10%;
+        right: 10%;
+    }
+    button {
+        width: 60%;
+        font-size: 1.6rem;
+        border-radius: 0px 0px 16px 16px;
+        background-color: #f2f2f2;
+        border: none;
+        color: #333;
+        box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: .1);
+        @media screen and (max-width: 480px) {
+            width: 80%;
+        }
+    }
+    .dropdown-menu {
+        font-size: 1.6rem;
+        border: none;
+        width: 60%;
+        @media screen and (max-width: 480px) {
+            width: 80%;
+        }
+    }
+}
