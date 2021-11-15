@@ -62,4 +62,15 @@
 .carousel .carousel-indicators {
   top: 4rem;
 }
+
+#mob-notice {
+  display: none !important;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 960px) and (orientation: portrait) {
+  #mob-notice {
+    display: block !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
