@@ -1,0 +1,20 @@
+.carousel {
+    .carousel-inner {
+        .carousel-caption {
+            top: 0rem;
+            bottom: auto;
+            right: 0;
+            left: 0;
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0) 100%);
+        }
+        h5 {
+            margin-top: 4rem;
+           font-family: 'Caveat', sans-serif;
+           font-size: 4rem;
+        }
+    }
+    .carousel-indicators {
+        top: 4rem;
+    }
+}
