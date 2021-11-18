@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind test project</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container mx-auto py-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <section>
+            <div class="flex flex-col justify-center items-center h-64 bg-center bg-no-repeat bg-cover rounded-2xl relative" style="background-image: url('img/458.jpg')">
+                <div class="bg-gray-900 bg-opacity-40 absolute top-0 right-0 bottom-0 left-0 rounded-2xl"></div>
+                <h2 class="text-center text-white z-10 font-serif font-bold text-4xl">Ferrari 458 Italia</h2>
+                <button class="car-info-btn py-2 px-8 mt-4 bg-blue-300 z-10 rounded hover:bg-green-300 transition-all duration-500">Show info</button>
+            </div>
+            <p class="car-info-text h-0 opacity-0 p-4 bg-gray-200 rounded-2xl transition-all duration-500 shadow-md">
+                The Ferrari 458 Italia (Type F142) is a mid-engine sports car produced by Ferrari.
+                 The 458 replaced the F430, and was first officially unveiled at the 2009 Frankfurt Motor Show.
+                 It was succeeded by the 488 GTB (Gran Turismo Berlinetta),
+                  which was unveiled at the 2015 Geneva Motor Show.<br>
+                  <a class="text-blue-600 underline" href="https://en.wikipedia.org/wiki/Ferrari_458">Read more</a>
+            </p>
+        </section>
+        <section>
+            <div class="flex flex-col justify-center items-center h-64 bg-center bg-no-repeat bg-cover rounded-2xl relative" style="background-image: url('img/California.jpg')">
+                <div class="bg-gray-900 bg-opacity-40 absolute top-0 right-0 bottom-0 left-0 rounded-2xl"></div>
+                <h2 class="text-center text-white z-10 font-serif font-bold text-4xl">Ferrari California</h2>
+                <button class="car-info-btn py-2 px-8 mt-4 bg-blue-300 z-10 rounded hover:bg-green-300 transition-all duration-500">Show info</button>
+            </div>
+            <p class="car-info-text h-0 opacity-0 p-4 bg-gray-200 rounded-2xl transition-all duration-500 shadow-md">
+                The Ferrari California (Type F149) is a grand touring, high performance sports car created by the
+                 Italian automobile manufacturer Ferrari. It is a two-door 2+2 hard top convertible. When originally
+                  unveiled in 2008, the California was powered by a front-mid mounted, rear wheel drive, naturally
+                   aspirated 4.3-litre V8. In 2012 a lighter, slightly more powerful variant, the California 30
+                    was introduced. In 2014, Ferrari announced the second generation of the model, named California
+                     T powered by a new twin-turbo 3.9-litre V8.<br>
+                  <a class="text-blue-600 underline" href="https://en.wikipedia.org/wiki/Ferrari_California">Read more</a>
+            </p>
+        </section>
+        <section>
+            <div class="flex flex-col justify-center items-center h-64 bg-center bg-no-repeat bg-cover rounded-2xl relative" style="background-image: url('img/Ferrari_SP38.jpg')">
+                <div class="bg-gray-900 bg-opacity-40 absolute top-0 right-0 bottom-0 left-0 rounded-2xl"></div>
+                <h2 class="text-center text-white z-10 font-serif font-bold text-4xl">Ferrarri SP38 Deborah</h2>
+                <button class="car-info-btn py-2 px-8 mt-4 bg-blue-300 z-10 rounded hover:bg-green-300 transition-all duration-500">Show info</button>
+            </div>
+            <p class="car-info-text h-0 opacity-0 p-4 bg-gray-200 rounded-2xl transition-all duration-500 shadow-md">
+                This is likely the first Ferrari model to take the name of a person — except the ones that were named
+                 after Enzo Ferrari, Dino Ferrari, and Sergio Pininfarina. As with any coachbuilt Ferrari, it’s very
+                  expensive, with estimates ranging from €3 million to €4 million.<br>
+                  <a class="text-blue-600 underline" href="https://en.wikipedia.org/wiki/Ferrari_488#Ferrari_SP38_Deborah">Read more</a>
+            </p>
+        </section>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
