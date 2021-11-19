@@ -1,0 +1,44 @@
+header {
+  height: 5rem;
+  background-color: #dbdbdb;
+}
+
+aside {
+  width: 20%;
+  background-color: silver;
+}
+
+main {
+  background-color: #e4e4e4;
+  height: calc(100vh - 5rem);
+}
+
+main .progress-cards {
+  background-color: skyblue;
+  height: 300px;
+}
+
+main .workout-statistics {
+  background-color: #52a7c9;
+  height: 300px;
+}
+
+main .recomend-trainer {
+  background-color: #94a9b1;
+  height: 320px;
+}
+
+main .diet-menu {
+  background-color: #68c2e6;
+  height: 600px;
+}
+
+main .calories-chart {
+  background-color: #d1d1d1;
+  height: 360px;
+}
+
+body {
+  min-width: 1200px;
+}
+/*# sourceMappingURL=style.css.map */
