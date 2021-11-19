@@ -1,0 +1,10 @@
+@import 'abstracts/variables';
+
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/content-area/content-container';
+
+//temp css
+body {
+    min-width: 1200px;
+}
