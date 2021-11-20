@@ -1,4 +1,6 @@
 //temp css
+@import 'calories-chart';
+
 main {
     background-color: rgb(228, 228, 228);
     height: calc(100vh - 5rem);
@@ -21,7 +23,8 @@ main {
         height: 600px;
     }
     .calories-chart {
-        background-color: rgb(209, 209, 209);
-        height: 360px;
+        //background-color: rgb(209, 209, 209);
+        // height: 360px;
+        // padding: 3rem;
     }
 }

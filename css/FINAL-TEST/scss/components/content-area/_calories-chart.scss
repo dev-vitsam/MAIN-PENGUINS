@@ -1,0 +1,194 @@
+.calories-chart {
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 2rem 2rem 2rem 3rem; 
+
+    &__title {
+        padding: 1rem 0;
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: .75rem;
+            font-weight: 400;
+        }
+    }
+
+}
+.chart-grid {
+    &__row {
+        border-top: 1px dashed #D1D1D1;
+        min-height: 2.5rem;
+        &--bottom-row {
+            border-top: 1px dashed #D1D1D1;
+            border-bottom: 1px dashed #D1D1D1;
+        }
+    }
+    
+    &__cell {
+        position: relative;
+        min-width: 40px;
+        width: 4.76%;
+        min-height: 100%;
+    }
+    &__top-col {
+        width: 10px;
+        background-color: #0B2A97;
+        position: absolute;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        right: -5px;
+        bottom: -1px;
+
+        &--1-col {
+            height: 6.25rem;
+        }
+        &--2-col {
+            height: 8.4rem;
+        }
+        &--3-col {
+            height: 3.75rem;
+        }
+        &--4-col {
+            height: 2rem;
+        }
+        &--5-col {
+            height: 7.7rem;
+        }
+        &--6-col {
+            height: 3.75rem;
+        }
+        &--7-col {
+            height: 0.75rem;
+        }
+        &--8-col {
+            height: 5.2rem;
+        }
+        &--9-col {
+            height: 2.8rem;
+        }
+        &--10-col {
+            height: 6.25rem;
+        }
+        &--11-col {
+            height: 2.8rem;
+        }
+        &--12-col {
+            height: 6.25rem;
+        }
+        &--13-col {
+            height: 8.4rem;
+        }
+        &--14-col {
+            height: 3.75rem;
+        }
+        &--15-col {
+            height: 2rem;
+        }
+        &--16-col {
+            height: 7.7rem;
+        }
+        &--17-col {
+            height: 3.75rem;
+        }
+        &--18-col {
+            height: 0.75rem;
+        }
+        &--19-col {
+            height: 5.2rem;
+        }
+        &--20-col {
+            height: 3.75rem;
+        }
+    }
+    &__bottom-col {
+        width: 10px;
+        background-color: #FF9432;
+        position: absolute;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        right: -5px;
+        top: 0;
+
+        &--1-col {
+            height: .5rem;
+        }
+        &--2-col {
+            height: 2.2rem;
+        }
+        &--3-col {
+            height: 4.7rem;
+        }
+        &--4-col {
+            height: 1.2rem;
+        }
+        &--5-col {
+            height: 2.2rem;
+        }
+        &--6-col {
+            height: 5.2rem;
+        }
+        &--7-col {
+            height: 3.75rem;
+        }
+        &--8-col {
+            height: 1.8rem;
+        }
+        &--9-col {
+            height: 3.75rem;
+        }
+        &--10-col {
+            height: 1.8rem;
+        }
+        &--11-col {
+            height: 3.1rem;
+        }
+        &--12-col {
+            height: .5rem;
+        }
+        &--13-col {
+            height: 2.2rem;
+        }
+        &--14-col {
+            height: 4.7rem;
+        }
+        &--15-col {
+            height: 1.2rem;
+        }
+        &--16-col {
+            height: 3.75rem;
+        }
+        &--17-col {
+            height: 5.2rem;
+        }
+        &--18-col {
+            height: 3.75rem;
+        }
+        &--19-col {
+            height: 1.8rem;
+        }
+        &--20-col {
+            height: 5.2rem;
+        }
+    }
+    &__x-numbers {
+        font-size: .9rem;
+        color: #808080;
+        position: absolute;
+        bottom: -2rem;
+        right: -8px;
+    }
+    &__y-numbers {
+        font-size: .9rem;
+        color: #808080;
+        position: absolute;
+        left: -2rem;
+        top: -12px;
+
+        &--last {
+            top: 28px;
+        }
+    }
+}

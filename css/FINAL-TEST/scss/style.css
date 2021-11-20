@@ -8,6 +8,244 @@ aside {
   background-color: silver;
 }
 
+.calories-chart {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.calories-chart__title {
+  padding: 1rem 0;
+}
+
+.calories-chart__title h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.calories-chart__title p {
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.chart-grid__row {
+  border-top: 1px dashed #D1D1D1;
+  min-height: 2.5rem;
+}
+
+.chart-grid__row--bottom-row {
+  border-top: 1px dashed #D1D1D1;
+  border-bottom: 1px dashed #D1D1D1;
+}
+
+.chart-grid__cell {
+  position: relative;
+  min-width: 40px;
+  width: 4.76%;
+  min-height: 100%;
+}
+
+.chart-grid__top-col {
+  width: 10px;
+  background-color: #0B2A97;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  right: -5px;
+  bottom: -1px;
+}
+
+.chart-grid__top-col--1-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--2-col {
+  height: 8.4rem;
+}
+
+.chart-grid__top-col--3-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--4-col {
+  height: 2rem;
+}
+
+.chart-grid__top-col--5-col {
+  height: 7.7rem;
+}
+
+.chart-grid__top-col--6-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--7-col {
+  height: 0.75rem;
+}
+
+.chart-grid__top-col--8-col {
+  height: 5.2rem;
+}
+
+.chart-grid__top-col--9-col {
+  height: 2.8rem;
+}
+
+.chart-grid__top-col--10-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--11-col {
+  height: 2.8rem;
+}
+
+.chart-grid__top-col--12-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--13-col {
+  height: 8.4rem;
+}
+
+.chart-grid__top-col--14-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--15-col {
+  height: 2rem;
+}
+
+.chart-grid__top-col--16-col {
+  height: 7.7rem;
+}
+
+.chart-grid__top-col--17-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--18-col {
+  height: 0.75rem;
+}
+
+.chart-grid__top-col--19-col {
+  height: 5.2rem;
+}
+
+.chart-grid__top-col--20-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col {
+  width: 10px;
+  background-color: #FF9432;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  right: -5px;
+  top: 0;
+}
+
+.chart-grid__bottom-col--1-col {
+  height: .5rem;
+}
+
+.chart-grid__bottom-col--2-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--3-col {
+  height: 4.7rem;
+}
+
+.chart-grid__bottom-col--4-col {
+  height: 1.2rem;
+}
+
+.chart-grid__bottom-col--5-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--6-col {
+  height: 5.2rem;
+}
+
+.chart-grid__bottom-col--7-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--8-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--9-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--10-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--11-col {
+  height: 3.1rem;
+}
+
+.chart-grid__bottom-col--12-col {
+  height: .5rem;
+}
+
+.chart-grid__bottom-col--13-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--14-col {
+  height: 4.7rem;
+}
+
+.chart-grid__bottom-col--15-col {
+  height: 1.2rem;
+}
+
+.chart-grid__bottom-col--16-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--17-col {
+  height: 5.2rem;
+}
+
+.chart-grid__bottom-col--18-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--19-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--20-col {
+  height: 5.2rem;
+}
+
+.chart-grid__x-numbers {
+  font-size: .9rem;
+  color: #808080;
+  position: absolute;
+  bottom: -2rem;
+  right: -8px;
+}
+
+.chart-grid__y-numbers {
+  font-size: .9rem;
+  color: #808080;
+  position: absolute;
+  left: -2rem;
+  top: -12px;
+}
+
+.chart-grid__y-numbers--last {
+  top: 28px;
+}
+
 main {
   background-color: #e4e4e4;
   height: calc(100vh - 5rem);
@@ -33,12 +271,9 @@ main .diet-menu {
   height: 600px;
 }
 
-main .calories-chart {
-  background-color: #d1d1d1;
-  height: 360px;
-}
-
 body {
   min-width: 1200px;
+  background-color: #F5F9F1;
+  font-family: 'Poppins', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
