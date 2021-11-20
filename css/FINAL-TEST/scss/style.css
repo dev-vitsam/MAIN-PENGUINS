@@ -13,6 +13,7 @@ aside {
   margin: 20px;
   border-radius: 20px;
   padding: 2rem 2rem 2rem 3rem;
+  min-width: 900px;
 }
 
 .calories-chart__title {
@@ -27,6 +28,55 @@ aside {
 .calories-chart__title p {
   font-size: .75rem;
   font-weight: 400;
+}
+
+.calories-chart__legend-item {
+  position: relative;
+  font-size: 1rem;
+  margin: 0 2rem;
+}
+
+.calories-chart__legend-item--blue::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 19px;
+  height: 19px;
+  background-color: #0B2A97;
+  border-radius: 10px;
+}
+
+.calories-chart__legend-item--yellow::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 19px;
+  height: 19px;
+  background-color: #FF9432;
+  border-radius: 10px;
+}
+
+.calories-chart__legend-select {
+  min-height: 3rem;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  padding: .75rem 2.5rem .75rem 1.4rem;
+  border-radius: 24px;
+  background-color: #0B2A97;
+  position: relative;
+}
+
+.calories-chart__legend-select::after {
+  content: "";
+  width: .75rem;
+  height: .75rem;
+  position: absolute;
+  top: 1.1rem;
+  right: 1.2rem;
+  background-image: url("../img/icons/chevron-down-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .chart-grid__row {
@@ -247,7 +297,6 @@ aside {
 }
 
 main {
-  background-color: #e4e4e4;
   height: calc(100vh - 5rem);
 }
 
@@ -272,7 +321,7 @@ main .diet-menu {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1480px;
   background-color: #F5F9F1;
   font-family: 'Poppins', sans-serif;
 }
