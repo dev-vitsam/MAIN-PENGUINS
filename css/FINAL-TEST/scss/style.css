@@ -9,7 +9,7 @@ aside {
 }
 
 main {
-  background-color: #e4e4e4;
+  background-color: #f5f9f1;
   height: calc(100vh - 5rem);
 }
 
@@ -28,11 +28,6 @@ main .recomend-trainer {
   height: 320px;
 }
 
-main .diet-menu {
-  background-color: #68c2e6;
-  height: 600px;
-}
-
 main .calories-chart {
   background-color: #d1d1d1;
   height: 360px;
@@ -40,5 +35,8 @@ main .calories-chart {
 
 body {
   min-width: 1200px;
+}
+.radius1rem {
+  border-radius: 1rem !important;
 }
 /*# sourceMappingURL=style.css.map */
