@@ -5,7 +5,7 @@ header {
 
 aside {
   width: 20%;
-  background-color: silver;
+  background-color: #fff;
 }
 
 .workout-stat {
@@ -551,8 +551,10 @@ main .recomend-trainer {
   color: #626262;
 }
 
+
 .trainer-card .rating {
   font-weight: 500;
+
 }
 
 .trainer-card a {
