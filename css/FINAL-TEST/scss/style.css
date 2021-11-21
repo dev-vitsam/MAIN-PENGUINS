@@ -8,18 +8,465 @@ aside {
   background-color: silver;
 }
 
+.workout-stat {
+  min-width: 660px;
+  max-width: 780px;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.workout-stat__title h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.workout-stat__title p {
+  font-size: .75rem;
+  color: #929292;
+}
+
+.workout-stat__activity-select {
+  border: none;
+  padding: .75rem 3.2rem;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1rem;
+  position: relative;
+}
+
+.workout-stat__activity-select::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/work-stat.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 1rem;
+  top: .75rem;
+}
+
+.workout-stat__activity-select::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/chevron-down-blue.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1rem;
+  top: .75rem;
+}
+
+.w-chart-grid__row {
+  width: 100%;
+  min-height: 2.7rem;
+  border-bottom: 1px dashed #D1D1D1;
+}
+
+.w-chart-grid__row--top-row {
+  min-height: 1.5rem;
+}
+
+.w-chart-grid__row--active {
+  border-bottom: 1px dashed #6F6F6F;
+}
+
+.w-chart-grid__cell {
+  max-width: 80px;
+  width: 12.5%;
+  min-height: 100%;
+  border-right: 1px dashed #D1D1D1;
+  position: relative;
+}
+
+.w-chart-grid__cell--first {
+  max-width: 40px;
+  width: 6.25%;
+}
+
+.w-chart-grid__cell--last {
+  max-width: 40px;
+  width: 6.25%;
+  border: none;
+}
+
+.w-chart-grid__cell--active {
+  border-right: 1px dashed #6F6F6F;
+}
+
+.w-chart-grid__active-point {
+  display: block;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  outline: 8px solid #0B2A97;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: 10;
+}
+
+.w-chart-grid__chart-line {
+  position: absolute;
+  bottom: -8px;
+  left: -240px;
+}
+
+.w-chart-grid__x-text {
+  position: absolute;
+  right: -.75rem;
+  bottom: -1.8rem;
+  color: #3E4954;
+  font-size: 0.75rem;
+}
+
+.w-chart-grid__y-text {
+  position: absolute;
+  left: -1.75rem;
+  bottom: -.5rem;
+  color: #808080;
+  font-size: 0.75rem;
+}
+
+.w-chart-grid__dist-label {
+  height: 4rem;
+  width: 8rem;
+  background-color: #fff;
+  position: absolute;
+  left: 4rem;
+  bottom: 1rem;
+  -webkit-box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.13);
+  border-radius: 16px;
+  padding: .5rem;
+  z-index: 10;
+}
+
+.w-chart-grid__dist-label::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  position: absolute;
+  left: -10px;
+  top: 1.5rem;
+}
+
+.w-chart-grid__dist-label h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.w-chart-grid__dist-label p {
+  margin: .25rem 0 0 0;
+  font-size: .75rem;
+  color: #AFAFAF;
+}
+
+.calories-chart {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 2rem 2rem 2rem 3rem;
+  min-width: 900px;
+}
+
+.calories-chart__title {
+  padding: 1rem 0;
+}
+
+.calories-chart__title h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.calories-chart__title p {
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.calories-chart__legend-item {
+  position: relative;
+  font-size: 1rem;
+  margin: 0 2rem;
+}
+
+.calories-chart__legend-item--blue::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 19px;
+  height: 19px;
+  background-color: #0B2A97;
+  border-radius: 10px;
+}
+
+.calories-chart__legend-item--yellow::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 19px;
+  height: 19px;
+  background-color: #FF9432;
+  border-radius: 10px;
+}
+
+.calories-chart__legend-select {
+  min-height: 3rem;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  padding: .75rem 2.5rem .75rem 1.4rem;
+  border-radius: 24px;
+  background-color: #0B2A97;
+  position: relative;
+}
+
+.calories-chart__legend-select::after {
+  content: "";
+  width: .75rem;
+  height: .75rem;
+  position: absolute;
+  top: 1.1rem;
+  right: 1.2rem;
+  background-image: url("../img/icons/chevron-down-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chart-grid__row {
+  border-top: 1px dashed #D1D1D1;
+  min-height: 2.5rem;
+}
+
+.chart-grid__row--bottom-row {
+  border-top: 1px dashed #D1D1D1;
+  border-bottom: 1px dashed #D1D1D1;
+}
+
+.chart-grid__cell {
+  position: relative;
+  min-width: 40px;
+  width: 4.76%;
+  min-height: 100%;
+}
+
+.chart-grid__top-col {
+  width: 10px;
+  background-color: #0B2A97;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  right: -5px;
+  bottom: -1px;
+}
+
+.chart-grid__top-col--1-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--2-col {
+  height: 8.4rem;
+}
+
+.chart-grid__top-col--3-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--4-col {
+  height: 2rem;
+}
+
+.chart-grid__top-col--5-col {
+  height: 7.7rem;
+}
+
+.chart-grid__top-col--6-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--7-col {
+  height: 0.75rem;
+}
+
+.chart-grid__top-col--8-col {
+  height: 5.2rem;
+}
+
+.chart-grid__top-col--9-col {
+  height: 2.8rem;
+}
+
+.chart-grid__top-col--10-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--11-col {
+  height: 2.8rem;
+}
+
+.chart-grid__top-col--12-col {
+  height: 6.25rem;
+}
+
+.chart-grid__top-col--13-col {
+  height: 8.4rem;
+}
+
+.chart-grid__top-col--14-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--15-col {
+  height: 2rem;
+}
+
+.chart-grid__top-col--16-col {
+  height: 7.7rem;
+}
+
+.chart-grid__top-col--17-col {
+  height: 3.75rem;
+}
+
+.chart-grid__top-col--18-col {
+  height: 0.75rem;
+}
+
+.chart-grid__top-col--19-col {
+  height: 5.2rem;
+}
+
+.chart-grid__top-col--20-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col {
+  width: 10px;
+  background-color: #FF9432;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  right: -5px;
+  top: 0;
+}
+
+.chart-grid__bottom-col--1-col {
+  height: .5rem;
+}
+
+.chart-grid__bottom-col--2-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--3-col {
+  height: 4.7rem;
+}
+
+.chart-grid__bottom-col--4-col {
+  height: 1.2rem;
+}
+
+.chart-grid__bottom-col--5-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--6-col {
+  height: 5.2rem;
+}
+
+.chart-grid__bottom-col--7-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--8-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--9-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--10-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--11-col {
+  height: 3.1rem;
+}
+
+.chart-grid__bottom-col--12-col {
+  height: .5rem;
+}
+
+.chart-grid__bottom-col--13-col {
+  height: 2.2rem;
+}
+
+.chart-grid__bottom-col--14-col {
+  height: 4.7rem;
+}
+
+.chart-grid__bottom-col--15-col {
+  height: 1.2rem;
+}
+
+.chart-grid__bottom-col--16-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--17-col {
+  height: 5.2rem;
+}
+
+.chart-grid__bottom-col--18-col {
+  height: 3.75rem;
+}
+
+.chart-grid__bottom-col--19-col {
+  height: 1.8rem;
+}
+
+.chart-grid__bottom-col--20-col {
+  height: 5.2rem;
+}
+
+.chart-grid__x-numbers {
+  font-size: .9rem;
+  color: #808080;
+  position: absolute;
+  bottom: -2rem;
+  right: -8px;
+}
+
+.chart-grid__y-numbers {
+  font-size: .9rem;
+  color: #808080;
+  position: absolute;
+  left: -2rem;
+  top: -12px;
+}
+
+.chart-grid__y-numbers--last {
+  top: 28px;
+}
+
 main {
-  background-color: #f5f9f1;
   height: calc(100vh - 5rem);
 }
 
 main .progress-cards {
   background-color: skyblue;
-  height: 300px;
-}
-
-main .workout-statistics {
-  background-color: #52a7c9;
   height: 300px;
 }
 
@@ -63,15 +510,10 @@ img {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-
-
-main .calories-chart {
-  background-color: #0B2A97;
-  height: 360px;
-}
-
 body {
-  min-width: 1200px;
+  min-width: 1480px;
+  background-color: #F5F9F1;
+  font-family: 'Poppins', sans-serif;
 }
 .radius1rem {
   border-radius: 1rem !important;
