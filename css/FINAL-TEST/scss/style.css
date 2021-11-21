@@ -182,7 +182,7 @@ aside {
 }
 
 .calories-chart__title {
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .calories-chart__title h2 {
@@ -461,6 +461,121 @@ aside {
   top: 28px;
 }
 
+main .recomend-trainer {
+  background-color: #fff;
+  margin: 0 20px;
+  padding: 2rem;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.recomend-trainer .scroll-btn {
+  border: none;
+  background-color: #fff;
+  height: 4.25rem;
+  width: 4.25rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 13px 22px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 13px 22px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.recomend-trainer .button-more {
+  min-height: 3rem;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  padding: .75rem 2rem;
+  border-radius: 24px;
+  background-color: #0B2A97;
+}
+
+.recomend-trainer h3 {
+  font-size: 1.25rem;
+}
+
+.recomend-trainer h5 {
+  font-size: .75rem;
+}
+
+.btn-view-more {
+  position: absolute;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: #0059ff;
+  top: 30px;
+  right: 30px;
+}
+
+.carousel-inner {
+  background-color: grey;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px;
+          box-shadow: 2px;
+}
+
+.carousel-item {
+  height: 238px;
+  width: 100%;
+}
+
+#item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.recomend-trainer img {
+  border-radius: 50%;
+}
+
+.trainer-card:hover {
+  background: white;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.trainer-card h6 {
+  font-weight: 500;
+}
+
+.trainer-card p {
+  color: #626262;
+}
+
+.trainer-card .rating {
+  font-weight: 500;
+}
+
+.trainer-card a {
+  color: #0B2A97;
+}
+
+.trainer-card .divider {
+  color: #E2E2E2;
+}
+
+#row {
+  width: 1500px;
+}
+
+.diet-menu {
+  margin: 0 20px 20px 0;
+  border-radius: 20px;
+}
+
+.radius1rem {
+  border-radius: 1rem !important;
+}
+
 main {
   height: calc(100vh - 5rem);
 }
@@ -470,52 +585,9 @@ main .progress-cards {
   height: 300px;
 }
 
-main .recomend-trainer {
-  background-color: #fff;
-  height: 370px;
-  margin: 42px 33px 37px 115px;
-  padding: 30px;
-  position: relative;
-  
-}
-.btn-view-more {
-  position: absolute;
-  box-shadow: none;
-  border: none;
-  border-radius: 20px;
-  color: white; 
-  background-color: rgb(0, 89, 255);
-  top: 30px;
-  right: 30px;
-}
-.carousel-inner {
-  background-color: grey;
-  border-radius: 2px;
-  box-shadow: 2px;
-}
-.carousel-item {
-  height: 238px;
-  weight: 100%;
-}
-#item {
-  display: inline-flex;
-  
-}
-/* img {
-  border-radius: 50%;
-} */
-.col-md-2:hover {
-  background: white;
-  border-radius: 30px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
 body {
   min-width: 1480px;
   background-color: #F5F9F1;
   font-family: 'Poppins', sans-serif;
-}
-.radius1rem {
-  border-radius: 1rem !important;
 }
 /*# sourceMappingURL=style.css.map */
