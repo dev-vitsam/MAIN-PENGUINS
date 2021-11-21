@@ -501,9 +501,9 @@ main .recomend-trainer {
   display: inline-flex;
   
 }
-img {
+/* img {
   border-radius: 50%;
-}
+} */
 .col-md-2:hover {
   background: white;
   border-radius: 30px;
