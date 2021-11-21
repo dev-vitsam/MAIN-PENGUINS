@@ -24,12 +24,49 @@ main .workout-statistics {
 }
 
 main .recomend-trainer {
-  background-color: #94a9b1;
-  height: 320px;
+  background-color: #fff;
+  height: 370px;
+  margin: 42px 33px 37px 115px;
+  padding: 30px;
+  position: relative;
+  
+}
+.btn-view-more {
+  position: absolute;
+  box-shadow: none;
+  border: none;
+  border-radius: 20px;
+  color: white; 
+  background-color: rgb(0, 89, 255);
+  top: 30px;
+  right: 30px;
+}
+.carousel-inner {
+  background-color: grey;
+  border-radius: 2px;
+  box-shadow: 2px;
+}
+.carousel-item {
+  height: 238px;
+  weight: 100%;
+}
+#item {
+  display: inline-flex;
+  
+}
+img {
+  border-radius: 50%;
+}
+.col-md-2:hover {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+
+
 main .calories-chart {
-  background-color: #d1d1d1;
+  background-color: #0B2A97;
   height: 360px;
 }
 
