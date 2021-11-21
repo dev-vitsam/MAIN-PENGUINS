@@ -1,6 +1,11 @@
+@import 'workout-stat-chart';
+@import 'calories-chart';
+@import 'recomend-trainer';
+@import 'diet-menu';
+
+
 //temp css
 main {
-    background-color: rgb(228, 228, 228);
     height: calc(100vh - 5rem);
 
 
@@ -8,20 +13,23 @@ main {
         background-color: skyblue;
         height: 300px;
     }
-    .workout-statistics {
-        background-color: rgb(82, 167, 201);
-        height: 300px;
-    }
-    .recomend-trainer {
-        background-color: rgb(148, 169, 177);
-        height: 320px;
-    }
-    .diet-menu {
-        background-color: rgb(104, 194, 230);
-        height: 600px;
-    }
-    .calories-chart {
-        background-color: rgb(209, 209, 209);
-        height: 360px;
-    }
+    //.workout-stat {
+        //background-color: rgb(82, 167, 201);
+        //height: 300px;
+    //}
+    //.recomend-trainer {
+        //background-color: rgb(148, 169, 177);
+       // height: 320px;
+    //}
+    // .diet-menu {
+    //     background-color: rgb(104, 194, 230);
+    //     height: 600px;
+    // }
+
+    //ready
+    //.calories-chart {
+        //background-color: rgb(209, 209, 209);
+        // height: 360px;
+        // padding: 3rem;
+    //}
 }
