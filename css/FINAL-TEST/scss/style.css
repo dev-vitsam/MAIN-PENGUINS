@@ -572,6 +572,10 @@ main .recomend-trainer {
   border-radius: 20px;
 }
 
+.radius1rem {
+  border-radius: 1rem !important;
+}
+
 main {
   height: calc(100vh - 5rem);
 }
