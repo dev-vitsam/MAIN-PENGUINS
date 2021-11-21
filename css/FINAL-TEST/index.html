@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/css2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container-fluid g-0">
         <div class="row g-0">
@@ -29,23 +33,29 @@
                         <li class="nav-item d-flex mt-3">
                             <a class="nav-link" href="#"><img src="img/icons/Sidebar/Dashboard.svg"> Dashboard</a>
                         </li>
-                        <li class="nav-item d-flex mt-1"> 
-                            <a class="nav-link" href="#"><img src="img/icons/sidebar/workout-stat.svg"> Workout Statistics</a>
+                        <li class="nav-item d-flex mt-1">
+                            <a class="nav-link" href="#"><img src="img/icons/sidebar/workout-stat.svg"> Workout
+                                Statistics</a>
                         </li>
                         <li class="nav-item d-flex mt-1">
-                            <a class="nav-link" href="#"><img src="img/icons/sidebar/workout-plan.svg">Workout plan<img class="" src="img/icons/sidebar/arrow-right.svg"></a>  
+                            <a class="nav-link" href="#"><img src="img/icons/sidebar/workout-plan.svg">Workout plan<img
+                                    class="" src="img/icons/sidebar/arrow-right.svg"></a>
                         </li>
-                        <li class="nav-item d-flex mt-1">  
+                        <li class="nav-item d-flex mt-1">
                             <a class="nav-link" href="#"><img src="img/icons/sidebar/distance-map.svg">Distance map</a>
                         </li>
                         <li class="nav-item d-flex mt-1">
-                            <a class="nav-link" href="#"><img src="img/icons/sidebar/diet-food-menu.svg">Diet Food Menu <img class="arrow" src="img/icons/sidebar/arrow-right.svg"></a>
+                            <a class="nav-link" href="#"><img src="img/icons/sidebar/diet-food-menu.svg">Diet Food Menu
+                                <img class="arrow" src="img/icons/sidebar/arrow-right.svg"></a>
                         </li>
-                        <li class="nav-item d-flex mt-1"> 
-                            <a class="nav-link" href="#"><img src="img/icons/sidebar/personal-record.svg">Personal Records</a>
+                        <li class="nav-item d-flex mt-1">
+                            <a class="nav-link" href="#"><img src="img/icons/sidebar/personal-record.svg">Personal
+                                Records</a>
                         </li>
-                        <li class="d-flex pt-lg-5">   
-                            <a class="calendar" href="#"><img class="calendarimg" src="img/icons/sidebar/calendar.svg">Create Workout <span class="plan-now">Plan now</span></a>
+                        <li class="d-flex pt-lg-5">
+                            <a class="calendar" href="#"><img class="calendarimg"
+                                    src="img/icons/sidebar/calendar.svg">Create Workout <span class="plan-now">Plan
+                                    now</span></a>
                         </li>
                     </ul>
                     <footer class="footer">
@@ -56,9 +66,40 @@
             </aside>
             <div class="col-10 col-lg-10 offset-lg-2 offset-2">
                 <!-- Header -->
-                <header> 
-                    header
+
+                <header class="position-sticky">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/icons/header/hamburgermenu.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <span class="h4 fw-bold">Dashboard</span>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            <a class="navbar-brand" href="#">
+                                <img src="img/icons/header/bell.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <a class="navbar-brand" href="#">
+                                <img src="img/icons/header/chat.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <a class="navbar-brand" href="#">
+                                <img src="img/icons/header/bonus.svg" alt="" width="30" height="24"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <a href="#" class="thumbnail"><img src="http://placehold.it/50" alt="Image"
+                                    class="rounded-circle" style="max-width:100%;"></a>
+                            <div>
+                                <p>Peter Perkur</p>
+                                <p>Super Admin</p>
+                            </div>
+                    </nav>
                 </header>
+
                 <!-- Content area -->
                 <main>
                     <section class="row g-0">
@@ -69,7 +110,8 @@
                         <!-- Workout statistic (chart) -->
                         <div class="col-6 col-lg-6">
                             <div class="workout-stat">
-                                <div class="workout-stat__header d-flex flex-row align-items-center justify-content-between">
+                                <div
+                                    class="workout-stat__header d-flex flex-row align-items-center justify-content-between">
                                     <div class="workout-stat__title">
                                         <h2>Workout Statistic</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -78,8 +120,11 @@
                                 </div>
                                 <div class="workout-stat__w-chart-grid w-chart-grid">
                                     <!-- row 1 -->
-                                    <div class="w-chart-grid__row w-chart-grid__row--top-row d-flex justify-content-center">
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--first"><div class="w-chart-grid__y-text">80</div></div>
+                                    <div
+                                        class="w-chart-grid__row w-chart-grid__row--top-row d-flex justify-content-center">
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--first">
+                                            <div class="w-chart-grid__y-text">80</div>
+                                        </div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
@@ -91,7 +136,9 @@
                                     </div>
                                     <!-- row 2 -->
                                     <div class="w-chart-grid__row d-flex justify-content-center">
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--first"><div class="w-chart-grid__y-text">60</div></div>
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--first">
+                                            <div class="w-chart-grid__y-text">60</div>
+                                        </div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
@@ -103,7 +150,9 @@
                                     </div>
                                     <!-- row 3 -->
                                     <div class="w-chart-grid__row d-flex justify-content-center">
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--first"><div class="w-chart-grid__y-text">40</div></div>
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--first">
+                                            <div class="w-chart-grid__y-text">40</div>
+                                        </div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
@@ -114,12 +163,17 @@
                                         <div class="w-chart-grid__cell w-chart-grid__cell--last"></div>
                                     </div>
                                     <!-- row 4 -->
-                                    <div class="w-chart-grid__row w-chart-grid__row--active d-flex justify-content-center">
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--first"><div class="w-chart-grid__y-text">20</div></div>
+                                    <div
+                                        class="w-chart-grid__row w-chart-grid__row--active d-flex justify-content-center">
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--first">
+                                            <div class="w-chart-grid__y-text">20</div>
+                                        </div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--active"><img class="w-chart-grid__chart-line" src="img/workout-chart-line.svg" alt=""><span class="w-chart-grid__active-point"></span></div>
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--active"><img
+                                                class="w-chart-grid__chart-line" src="img/workout-chart-line.svg"
+                                                alt=""><span class="w-chart-grid__active-point"></span></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
                                         <div class="w-chart-grid__cell"></div>
@@ -127,14 +181,35 @@
                                     </div>
                                     <!-- row 5 -->
                                     <div class="w-chart-grid__row d-flex justify-content-center">
-                                        <div class="w-chart-grid__cell  w-chart-grid__cell--first"><div class="w-chart-grid__y-text">0</div><div class="w-chart-grid__x-text">Jan</div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Feb</div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Mar</div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Apr</div></div>
-                                        <div class="w-chart-grid__cell w-chart-grid__cell--active"><div class="w-chart-grid__x-text">May</div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Jun</div><div class="w-chart-grid__dist-label"><h3 class="text-center">23 Km</h3><p class="text-center">Distance</p></div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Jul</div></div>
-                                        <div class="w-chart-grid__cell"><div class="w-chart-grid__x-text">Aug</div></div>
+                                        <div class="w-chart-grid__cell  w-chart-grid__cell--first">
+                                            <div class="w-chart-grid__y-text">0</div>
+                                            <div class="w-chart-grid__x-text">Jan</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Feb</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Mar</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Apr</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell w-chart-grid__cell--active">
+                                            <div class="w-chart-grid__x-text">May</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Jun</div>
+                                            <div class="w-chart-grid__dist-label">
+                                                <h3 class="text-center">23 Km</h3>
+                                                <p class="text-center">Distance</p>
+                                            </div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Jul</div>
+                                        </div>
+                                        <div class="w-chart-grid__cell">
+                                            <div class="w-chart-grid__x-text">Aug</div>
+                                        </div>
                                         <div class="w-chart-grid__cell w-chart-grid__cell--last"></div>
                                     </div>
                                 </div>
@@ -151,13 +226,17 @@
                                         <h3>Recomended Trainer for You</h3>
                                         <h5>Lorem ipsum dolor sit amet, consectetur</h5>
                                     </div>
-                                    <a href="#" class="button-more block text-decoration-none" role="button" aria-pressed="true">View more</a>
+                                    <a href="#" class="button-more block text-decoration-none" role="button"
+                                        aria-pressed="true">View more</a>
                                 </div>
                                 <div class="item" id="item">
                                     <div class="row mx-0" id="row">
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Roberto Carloz</h6>
                                                 <p class="specialization">Body building trainer</p>
                                                 <div class="rating">
@@ -168,8 +247,11 @@
                                             </div>
                                         </div>
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Cindy Moss</h6>
                                                 <p class="specialization">Fat Belly Trainer</p>
                                                 <div class="rating">
@@ -180,8 +262,11 @@
                                             </div>
                                         </div>
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Ivankov Smurz</h6>
                                                 <p class="specialization">Sixpack Builder</p>
                                                 <div class="rating">
@@ -192,8 +277,11 @@
                                             </div>
                                         </div>
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Louis Simatupang</h6>
                                                 <p class="specialization">Body building trainer</p>
                                                 <div class="rating">
@@ -204,8 +292,11 @@
                                             </div>
                                         </div>
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Peter Marloz</h6>
                                                 <p class="specialization">Yoga trainer</p>
                                                 <div class="rating">
@@ -216,8 +307,11 @@
                                             </div>
                                         </div>
                                         <div class="col-md-2">
-                                            <div class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
-                                                <a href="#" class="thumbnail"><img src="https://placehold.co/110?text=photo&font=roboto" alt="Image"></a>
+                                            <div
+                                                class="trainer-card d-flex flex-column justify-content-center align-items-center p-4">
+                                                <a href="#" class="thumbnail"><img
+                                                        src="https://placehold.co/110?text=photo&font=roboto"
+                                                        alt="Image"></a>
                                                 <h6 class="name-trainer mt-3">Roberto Carloz</h6>
                                                 <p class="specialization">Body building trainer</p>
                                                 <div class="rating">
@@ -226,7 +320,7 @@
                                                     <a class="text-decoration-none" href="#">Send request</a>
                                                 </div>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <!--.row-->
                                 </div>
@@ -239,8 +333,10 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur</p>
                                     </div>
                                     <div class="calories-chart__legend d-flex flex-row align-items-center">
-                                        <p class="calories-chart__legend-item calories-chart__legend-item--blue">Calories</p>
-                                        <p class="calories-chart__legend-item calories-chart__legend-item--yellow">Calories Burn</p>
+                                        <p class="calories-chart__legend-item calories-chart__legend-item--blue">
+                                            Calories</p>
+                                        <p class="calories-chart__legend-item calories-chart__legend-item--yellow">
+                                            Calories Burn</p>
                                         <button class="calories-chart__legend-select">Weekly</button>
                                         <!--
                                         <select name="" id="">
@@ -253,7 +349,9 @@
                                 <div class="calories-chart__chart-grid chart-grid">
                                     <!-- row 1 -->
                                     <div class="chart-grid__row d-flex">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">60</div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">60</div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
@@ -277,7 +375,9 @@
                                     </div>
                                     <!-- row 2 -->
                                     <div class="chart-grid__row d-flex">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">40</div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">40</div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
@@ -301,55 +401,139 @@
                                     </div>
                                     <!-- row 3 -->
                                     <div class="chart-grid__row d-flex">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">20</div><div class="chart-grid__top-col chart-grid__top-col--1-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--2-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--3-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--4-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--5-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--6-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--7-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--8-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--9-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--10-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--11-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--12-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--13-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--14-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--15-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--16-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--17-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--18-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--19-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__top-col chart-grid__top-col--20-col"></div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">20</div>
+                                            <div class="chart-grid__top-col chart-grid__top-col--1-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--2-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--3-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--4-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--5-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--6-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--7-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--8-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--9-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--10-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--11-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--12-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--13-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--14-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--15-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--16-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--17-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--18-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--19-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__top-col chart-grid__top-col--20-col"></div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                     </div>
                                     <!-- row 4 -->
                                     <div class="chart-grid__row d-flex">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">0</div><div class="chart-grid__bottom-col chart-grid__bottom-col--1-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--2-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--3-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--4-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--5-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--6-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--7-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--8-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--9-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--10-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--11-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--12-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--13-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--14-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--15-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--16-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--17-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--18-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--19-col"></div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__bottom-col chart-grid__bottom-col--20-col"></div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">0</div>
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--1-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--2-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--3-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--4-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--5-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--6-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--7-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--8-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--9-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--10-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--11-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--12-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--13-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--14-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--15-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--16-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--17-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--18-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--19-col"></div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__bottom-col chart-grid__bottom-col--20-col"></div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                     </div>
                                     <!-- row 5 -->
                                     <div class="chart-grid__row d-flex">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">20</div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">20</div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
                                         <div class="chart-grid__cell"></div>
@@ -373,29 +557,71 @@
                                     </div>
                                     <!-- row 6 -->
                                     <div class="chart-grid__row d-flex chart-grid__row--bottom-row">
-                                        <div class="chart-grid__cell"><div class="chart-grid__y-numbers">40</div><div class="chart-grid__y-numbers chart-grid__y-numbers--last">60</div><div class="chart-grid__x-numbers">01</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">02</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">03</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">04</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">05</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">06</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">07</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">08</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">09</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">10</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">11</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">12</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">13</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">14</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">15</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">16</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">17</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">18</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">19</div></div>
-                                        <div class="chart-grid__cell"><div class="chart-grid__x-numbers">20</div></div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__y-numbers">40</div>
+                                            <div class="chart-grid__y-numbers chart-grid__y-numbers--last">60</div>
+                                            <div class="chart-grid__x-numbers">01</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">02</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">03</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">04</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">05</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">06</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">07</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">08</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">09</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">10</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">11</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">12</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">13</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">14</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">15</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">16</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">17</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">18</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">19</div>
+                                        </div>
+                                        <div class="chart-grid__cell">
+                                            <div class="chart-grid__x-numbers">20</div>
+                                        </div>
                                         <div class="chart-grid__cell"></div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -404,25 +630,27 @@
                             <div class="diet-menu">
                                 <h4 class="my-5">Featured Diet Menu</h4>
                                 <div class="container mx-3">
-                                <div class="row">
+                                    <div class="row">
                                         <div class="col-3 bg-secondary radius1rem">
-                                        
+
                                         </div>
-                                    <div class="col-9">
-                                        <p class="h6">Chinese Orange Fruit With Avocado Salad</p>
-                                        <a href="#" class="text-decoration-none"><p>Kevin Ignis</p></a>
+                                        <div class="col-9">
+                                            <p class="h6">Chinese Orange Fruit With Avocado Salad</p>
+                                            <a href="#" class="text-decoration-none">
+                                                <p>Kevin Ignis</p>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div> 
-                                <div class="row pt-4">
-                                    <div class="col-5 px-1">
-                                        <img src="img/icons/clock.svg" alt="clock">
-                                        <span class="h6 mx-1 align-middle">4-6 mins</span>
+                                    <div class="row pt-4">
+                                        <div class="col-5 px-1">
+                                            <img src="img/icons/clock.svg" alt="clock">
+                                            <span class="h6 mx-1 align-middle">4-6 mins</span>
+                                        </div>
+                                        <div class="col-7 px-1">
+                                            <img src="img/icons/star-outline.svg" alt="star">
+                                            <span class="h6 mx-2 align-middle">568 Reviews</span>
+                                        </div>
                                     </div>
-                                    <div class="col-7 px-1">
-                                        <img src="img/icons/star-outline.svg" alt="star">  
-                                        <span class="h6 mx-2 align-middle">568 Reviews</span>
-                                    </div>
-                                </div>
                                 </div>
                                 <hr>
                                 <div class="container mx-3">
@@ -451,7 +679,7 @@
                                 <div class="container mx-3">
                                     <div class="row">
                                         <div class="col-3 bg-secondary radius1rem">
-                                
+
                                         </div>
                                         <div class="col-9">
                                             <p class="h6">Fresh or Frozen (No Sugar Added) Fruits</p>
@@ -475,7 +703,7 @@
                                 <div class="container mx-3">
                                     <div class="row">
                                         <div class="col-3 bg-secondary radius1rem">
-                                
+
                                         </div>
                                         <div class="col-9">
                                             <p class="h6">Originak Boiled Egg with Hamalaya Salt</p>
@@ -499,12 +727,15 @@
                             </div>
                         </div>
                     </section>
-                    
+
                 </main>
             </div>
         </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
