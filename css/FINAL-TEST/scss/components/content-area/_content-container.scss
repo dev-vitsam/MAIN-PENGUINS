@@ -1,6 +1,8 @@
-//temp css
+@import 'workout-stat-chart';
 @import 'calories-chart';
 
+
+//temp css
 main {
     height: calc(100vh - 5rem);
 
@@ -9,10 +11,10 @@ main {
         background-color: skyblue;
         height: 300px;
     }
-    .workout-statistics {
-        background-color: rgb(82, 167, 201);
-        height: 300px;
-    }
+    //.workout-stat {
+        //background-color: rgb(82, 167, 201);
+        //height: 300px;
+    //}
     .recomend-trainer {
         background-color: rgb(148, 169, 177);
         height: 320px;
