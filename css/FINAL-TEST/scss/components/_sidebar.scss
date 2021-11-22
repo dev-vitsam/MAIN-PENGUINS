@@ -5,21 +5,19 @@ aside {
     // position: fixed;
     z-index: 100;
 
-    .logo {
-        width: 345px;
-        height: 120px;
-    }
-    .logo {
-        width: 345px;
-        height: 120px;
-        display: block;
-        padding: 30px 20px 10px 50px;
+    
+    .logo img {
+        width: 200px;
     }
     .main-menu {
-        padding-left: 40px;
+        padding-left: 20px;
+        padding-top: 40px;
+        h6 {
+            font-weight: 600;
+        }
     }
     .menu, .nav-item {
-        font-family: Poppins;
+        
         font-style: normal;
         font-weight: 500;
     }
@@ -30,41 +28,69 @@ aside {
     .nav-item {
         font-size: 16px;
         line-height: 24px;
+        padding-left: .5rem;
+        min-height: 3.5rem;
+        border-top-left-radius:  20px;
+        border-bottom-left-radius: 20px;
+        border-right: solid 6px transparent;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #757575;
+        }
+        img {
+            filter: grayscale(1);
+            opacity: .7;
+            transition: all .2s ease-in;
+        }
     }
     
     
-    .nav-link:hover {
-        background: lightblue;
-        border-top-left-radius:  15px;
-        border-bottom-left-radius: 15px;
-        border-right-color: blue;
+    .nav-item:hover {
+        background: #E8EBF6;
+        border-top-left-radius:  20px;
+        border-bottom-left-radius: 20px;
         width: 100%;
-        border-right: solid;
+        border-right: solid 6px #0B2A97;
+        transition: all .2s ease-in;
+        a {
+            color: #0B2A97;
+        }
+        
+        
+    }
+    .nav-item:hover img {
+        filter: grayscale(0);
+        opacity: 1;
+        transition: all .2s ease-in;
     }
     .calendar {
-        background-color: blue;
+        background-color: #0B2A97;
         color: #fff;
         text-decoration: none;
-        border-radius: 10px;
-        width: 190px;
-        height: 90px;
-        text-align: center;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 0.5px;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: all .2s ease-in;
+             
+        p {
+            font-size: 1rem;
+            line-height: 1;
+            font-weight: 600;
+        }
     }
-    a.calendar:hover {
-        color: black;
-        background-color: white;
-    }
+    .calendar:hover {
+        box-shadow: 0px 12px 26px rgba(11, 42, 151, 0.31);
+        transition: all .2s ease-in;
+     }
     .calendarimg {
-        padding-top: 20px;
+        width: 2.5rem;
+        display: block;
+        
     }
     .license {
-        margin-top: 170px;
-        font-family: Poppins;
+        
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -75,7 +101,7 @@ aside {
         color:red;
     }
     .footer {
-        font-family: Poppins;
+        
         font-style: normal;
         font-weight: normal;
         font-size: 12px;

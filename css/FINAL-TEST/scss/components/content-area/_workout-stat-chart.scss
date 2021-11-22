@@ -3,7 +3,7 @@
     max-width: 780px;
     background-color: #fff;
     padding: 2rem 4rem;
-    margin: 20px;
+    margin: 16px 20px;
     border-radius: 20px;
 
     &__title {
@@ -100,6 +100,17 @@
         bottom: -10px;
         right: -10px;
         z-index: 10;
+        transition: all .25s ease-in;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            transition: all .25s ease-in;
+            
+        }
+        &:hover ~ .w-chart-grid__dist-label {
+            opacity: 1;
+            transition: all .25s ease-in;
+        }
     }
 
     &__chart-line {
@@ -107,7 +118,7 @@
         bottom: -8px;
         left: -240px;
     }
-
+    
     &__x-text {
         position: absolute;
         right: -.75rem;
@@ -127,14 +138,16 @@
     &__dist-label {
         height: 4rem;
         width: 8rem;
-        background-color: #fff;
+        background-color: rgba($color: #fff, $alpha: .9);
         position: absolute;
-        left: 4rem;
-        bottom: 1rem;
+        right: -10rem;
+        bottom: -2rem;
         box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.13);
         border-radius: 16px;
         padding: .5rem;
         z-index: 10;
+        opacity: 0;
+        transition: all .25s ease-in;
         &::before {
             content: "";
             width: 0; 
@@ -145,7 +158,6 @@
             position: absolute;
             left: -10px;
             top: 1.5rem;
-            
         }
 
         h3 {
