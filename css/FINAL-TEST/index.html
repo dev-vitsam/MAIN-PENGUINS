@@ -62,12 +62,113 @@
                 <!-- Content area -->
                 <main>
                     <section class="row g-0">
+                        
                         <!-- Progress cards (4 cards) -->
-                        <div class="col-6 col-lg-6 progress-cards">
-                            progress cards
+                        <div class="progress-cards col-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="d-flex flex-row">
+                                
+                                <!-- Left cadr section -->
+                                <div class="progress-cards__con w-100 d-flex flex-column">
+                                    
+                                    <!-- === 1 ============================== -->
+                                    <div class="m-1 progress-cards__body d-flex flex-column justify-content-between">    
+                                        <!-- === IMG/TEXT === -->
+                                        <div class="p-4 d-flex flex-row">
+                                            <img src="./img/icons/progress-cards/arm.svg" class="me-4" alt="...">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="progress-cards__text">Weekly Progress</p>
+                                                <h2 class="progress-cards__text-value">42%</h2>
+                                            </div>        
+                                        </div>
+                                        <!-- ================ -->
+
+                                        <!-- === PROGRESS === -->
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="progress rounded-pill progress__bg">
+                                                <div id="progress__line" class="progress-bar rounded-pill progress__wp-col"  ></div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+                                    </div>
+                                    <!-- ==================================== -->
+
+                                    <!-- === 2 ============================== -->
+                                    <div class="m-1 progress-cards__body d-flex flex-column justify-content-between">    
+                                        <!-- === IMG/TEXT === -->
+                                        <div class="p-4 d-flex flex-row">
+                                            <img src="./img/icons/progress-cards/bicycle.svg" class="me-4" alt="...">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="progress-cards__text">Daily Cycling</p>
+                                                <h2 class="progress-cards__text-value">230 Km</h2>
+                                            </div>        
+                                        </div>
+                                        <!-- ================ -->
+
+                                        <!-- === PROGRESS === -->
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="progress rounded-pill progress__bg">
+                                                <div id="progress__line" class="progress-bar rounded-pill progress__dc-col" role="progressbar" style="width: 92%" aria-valuenow="230" aria-valuemin="0" aria-valuemax="250"></div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+                                    </div>
+                                    <!-- ==================================== -->
+                                </div>
+                               
+                                <!-- Right cadr section -->
+                                <div class="progress-cards__con w-100 d-flex flex-column">
+                                   
+                                    <!-- === 3 ============================== -->
+                                    <div class="m-1 progress-cards__body d-flex flex-column justify-content-between">    
+                                        <!-- === IMG/TEXT === -->
+                                        <div class="p-4 d-flex flex-row">
+                                            <img src="./img/icons/progress-cards/run.svg" class="me-4" alt="...">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="progress-cards__text">Weekly Running</p>
+                                                <h2 class="progress-cards__text-value">40 Km</h2>
+                                            </div>        
+                                        </div>
+                                        <!-- ================ -->
+
+                                        <!-- === PROGRESS === -->
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="progress rounded-pill progress__bg">
+                                                <div class="progress-bar rounded-pill progress__wr-col" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="50"></div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+                                    </div>
+                                    <!-- ==================================== -->
+
+                                    <!-- === 4 ============================== -->
+                                    <div id="in-process" class="m-1 progress-cards__body d-flex flex-column justify-content-between">
+                                        <!-- === IMG/TEXT === -->
+                                        <div class="p-4 d-flex flex-row">
+                                            <img src="./img/icons/progress-cards/yoga.svg" class="me-4" alt="...">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="progress-cards__text">Morning Yoga</p>
+                                                <h2 class="progress-cards__text-value">18:34:21”</h2>
+                                            </div>        
+                                        </div>
+                                        <!-- ================ -->
+
+                                        <!-- === PROGRESS === -->
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="progress rounded-pill progress__bg">
+                                                <div class="progress-bar rounded-pill progress__my-col" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <!-- ================ -->
+
+                                    </div>
+                                    <!-- ==================================== -->
+                                </div>
+
+                            </div>
                         </div>
+
                         <!-- Workout statistic (chart) -->
-                        <div class="col-6 col-lg-6">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                             <div class="workout-stat">
                                 <div class="workout-stat__header d-flex flex-row align-items-center justify-content-between">
                                     <div class="workout-stat__title">
@@ -506,5 +607,6 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/progress.js"></script>
 </body>
 </html>
