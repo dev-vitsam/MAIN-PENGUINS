@@ -1,10 +1,119 @@
 header {
+  width: 100%;
   height: 5rem;
-  background-color: #dbdbdb; }
+  position: fixed;
+  z-index: 100; }
+  header .menu-container {
+    width: 90%; }
+  header .page-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-left: 2.5rem; }
+  header form {
+    position: relative;
+    margin-left: 11rem; }
+    header form .search-icon {
+      position: absolute;
+      width: 1.2rem;
+      left: 1rem;
+      top: 1rem; }
+  header .search-field {
+    width: 20rem;
+    height: 3rem;
+    padding-left: 3rem;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    font-size: 1rem; }
+  header .notifications .notif-icon {
+    display: block;
+    padding: 1rem;
+    background-color: #E9EEFF;
+    margin-right: 1.2rem;
+    border-radius: 20px;
+    position: relative; }
+    header .notifications .notif-icon::after {
+      content: "";
+      width: .8rem;
+      height: .8rem;
+      background-color: #FF9900;
+      outline: solid 4px #fff;
+      position: absolute;
+      border-radius: 50%;
+      top: .4rem;
+      right: .4rem; }
+  header .admin-profile h6 {
+    font-weight: 600;
+    font-size: 1rem; }
+  header .admin-profile p {
+    font-size: .75rem;
+    color: #8F8F8F; }
 
 aside {
-  width: 20%;
-  background-color: silver; }
+  min-width: 280px;
+  background-color: #fff;
+  z-index: 100; }
+  aside .logo {
+    width: 345px;
+    height: 120px; }
+  aside .logo {
+    width: 345px;
+    height: 120px;
+    display: block;
+    padding: 30px 20px 10px 50px; }
+  aside .main-menu {
+    padding-left: 40px; }
+  aside .menu, aside .nav-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500; }
+  aside .menu {
+    font-size: 20px;
+    line-height: 30px; }
+  aside .nav-item {
+    font-size: 16px;
+    line-height: 24px; }
+  aside .nav-link:hover {
+    background: lightblue;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-color: blue;
+    width: 100%;
+    border-right: solid; }
+  aside .calendar {
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 190px;
+    height: 90px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0.5px; }
+  aside a.calendar:hover {
+    color: black;
+    background-color: white; }
+  aside .calendarimg {
+    padding-top: 20px; }
+  aside .license {
+    margin-top: 170px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #969BA0; }
+  aside .heart {
+    color: red; }
+  aside .footer {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px; }
 
 .progress-cards {
   margin: 20px;
@@ -437,15 +546,23 @@ main .recomend-trainer {
 .diet-menu {
   margin: 0 0 20px 0;
   border-radius: 20px; }
+  .diet-menu hr {
+    background-color: #F4F4F4;
+    height: 1px; }
+  .diet-menu a {
+    color: #0B2A97;
+    font-weight: 600; }
 
 .radius1rem {
   border-radius: 1rem !important; }
 
 main {
-  height: calc(100vh - 5rem); }
+  height: calc(100vh - 5rem);
+  padding-top: 6rem; }
 
 body {
   min-width: 1480px;
+  max-width: 1920px;
   background-color: #F5F9F1;
   font-family: 'Poppins', sans-serif; }
 
