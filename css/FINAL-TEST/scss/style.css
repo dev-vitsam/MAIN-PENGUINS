@@ -116,7 +116,7 @@ aside {
     line-height: 18px; }
 
 .progress-cards {
-  margin: 20px;
+  margin: 20px 0 0;
   padding: 0px; }
   .progress-cards__body {
     border-radius: 20px;
