@@ -1,7 +1,111 @@
 //temp css
 aside {
-    width: 20%;
-    background-color: silver;
+    min-width: 280px;
+    background-color: #fff;
     // position: fixed;
+    z-index: 100;
+
+    
+    .logo img {
+        width: 200px;
+    }
+    .main-menu {
+        padding-left: 20px;
+        padding-top: 40px;
+        h6 {
+            font-weight: 600;
+        }
+    }
+    .menu, .nav-item {
+        
+        font-style: normal;
+        font-weight: 500;
+    }
+    .menu {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .nav-item {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: .5rem;
+        min-height: 3.5rem;
+        border-top-left-radius:  20px;
+        border-bottom-left-radius: 20px;
+        border-right: solid 6px transparent;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #757575;
+        }
+        img {
+            filter: grayscale(1);
+            opacity: .7;
+            transition: all .2s ease-in;
+        }
+    }
+    
+    
+    .nav-item:hover {
+        background: #E8EBF6;
+        border-top-left-radius:  20px;
+        border-bottom-left-radius: 20px;
+        width: 100%;
+        border-right: solid 6px #0B2A97;
+        transition: all .2s ease-in;
+        a {
+            color: #0B2A97;
+        }
+        
+        
+    }
+    .nav-item:hover img {
+        filter: grayscale(0);
+        opacity: 1;
+        transition: all .2s ease-in;
+    }
+    .calendar {
+        background-color: #0B2A97;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 1rem;
+        transition: all .2s ease-in;
+             
+        p {
+            font-size: 1rem;
+            line-height: 1;
+            font-weight: 600;
+        }
+    }
+    .calendar:hover {
+        box-shadow: 0px 12px 26px rgba(11, 42, 151, 0.31);
+        transition: all .2s ease-in;
+     }
+    .calendarimg {
+        width: 2.5rem;
+        display: block;
+        
+    }
+    .license {
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #969BA0;
+    }
+    .heart {
+        color:red;
+    }
+    .footer {
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
     
 }

@@ -1,0 +1,68 @@
+$ico-size:80px;
+
+.progress-cards {
+    margin: 0 0 20px 16px;
+    padding: 0px;
+
+    &__body {
+    	border-radius:20px;
+    	background-color: white;
+    	transition-duration: 0.5s;
+    	img {
+    		max-width: $ico-size;
+    		max-height: $ico-size;
+    	}
+    	&#in-process{
+			background-color: #FFBC11;
+			.progress-cards__text,.progress-cards__text-value{
+				color: #FFFFFF;
+			}
+			.progress {
+				&__bg {
+					background-color: #FFD976;
+				}
+				&__wp-col,&__dc-col,&__wr-col,&__my-col {
+					background-color:#FBF4DD;
+				}
+			}
+    	}
+    	.progress {
+    		width: 90%;
+			height: 5px;
+
+			&__wp-col {
+				background-color: #27BC48;
+			}
+			&__dc-col {
+				background-color:#FF3282;
+			}
+			&__wr-col {
+				background-color:#A02CFA;
+			}
+			&__my-col {
+				background-color: #24BED5;
+			}
+			&__bg{
+				background-color: #E7E7E7;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+	}
+
+	&__text{
+		font-size:16px;
+		font-weight:400;
+		color: #969BA0;
+		margin: 0;
+		}
+	&__text-value{
+		font-size:28px;
+		font-weight:600;
+		color: #000000;
+		margin: 0;
+	}
+	
+}

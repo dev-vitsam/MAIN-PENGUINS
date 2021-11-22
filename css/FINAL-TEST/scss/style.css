@@ -1,11 +1,282 @@
 header {
+  width: 100%;
   height: 5rem;
-  background-color: #dbdbdb;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+}
+
+header .menu-container {
+  width: 90%;
+}
+
+header .page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-left: 2.5rem;
+}
+
+header form {
+  position: relative;
+}
+
+header form .search-icon {
+  position: absolute;
+  width: 1.2rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+header .search-field {
+  width: 20rem;
+  height: 3rem;
+  padding-left: 3rem;
+  border: none;
+  background-color: #F3F3F3;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+header .notifications .notif-icon {
+  display: block;
+  padding: .8rem;
+  background-color: #E9EEFF;
+  margin-right: 1.2rem;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+header .notifications .notif-icon::after {
+  content: "";
+  width: .8rem;
+  height: .8rem;
+  background-color: #FF9900;
+  outline: solid 4px #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: .2rem;
+  right: .2rem;
+}
+
+header .notifications .notif-icon:hover {
+  background-color: #dbe3fc;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+header .admin-profile h6 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+header .admin-profile p {
+  font-size: .75rem;
+  color: #8F8F8F;
 }
 
 aside {
-  width: 20%;
+  min-width: 280px;
   background-color: #fff;
+  z-index: 100;
+}
+
+aside .logo img {
+  width: 200px;
+}
+
+aside .main-menu {
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+aside .main-menu h6 {
+  font-weight: 600;
+}
+
+aside .menu, aside .nav-item {
+  font-style: normal;
+  font-weight: 500;
+}
+
+aside .menu {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+aside .nav-item {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: .5rem;
+  min-height: 3.5rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: solid 6px transparent;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .nav-item a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+aside .nav-item img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: .7;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .nav-item:hover {
+  background: #E8EBF6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  border-right: solid 6px #0B2A97;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .nav-item:hover a {
+  color: #0B2A97;
+}
+
+aside .nav-item:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .calendar {
+  background-color: #0B2A97;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 1rem;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .calendar p {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+aside .calendar:hover {
+  -webkit-box-shadow: 0px 12px 26px rgba(11, 42, 151, 0.31);
+          box-shadow: 0px 12px 26px rgba(11, 42, 151, 0.31);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+aside .calendarimg {
+  width: 2.5rem;
+  display: block;
+}
+
+aside .license {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #969BA0;
+}
+
+aside .heart {
+  color: red;
+}
+
+aside .footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.progress-cards {
+  margin: 0 0 20px 16px;
+  padding: 0px;
+}
+
+.progress-cards__body {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.progress-cards__body img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.progress-cards__body#in-process {
+  background-color: #FFBC11;
+}
+
+.progress-cards__body#in-process .progress-cards__text, .progress-cards__body#in-process .progress-cards__text-value {
+  color: #FFFFFF;
+}
+
+.progress-cards__body#in-process .progress__bg {
+  background-color: #FFD976;
+}
+
+.progress-cards__body#in-process .progress__wp-col, .progress-cards__body#in-process .progress__dc-col, .progress-cards__body#in-process .progress__wr-col, .progress-cards__body#in-process .progress__my-col {
+  background-color: #FBF4DD;
+}
+
+.progress-cards__body .progress {
+  width: 90%;
+  height: 5px;
+}
+
+.progress-cards__body .progress__wp-col {
+  background-color: #27BC48;
+}
+
+.progress-cards__body .progress__dc-col {
+  background-color: #FF3282;
+}
+
+.progress-cards__body .progress__wr-col {
+  background-color: #A02CFA;
+}
+
+.progress-cards__body .progress__my-col {
+  background-color: #24BED5;
+}
+
+.progress-cards__body .progress__bg {
+  background-color: #E7E7E7;
+}
+
+.progress-cards__body:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.progress-cards__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #969BA0;
+  margin: 0;
+}
+
+.progress-cards__text-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
 }
 
 .workout-stat {
@@ -13,7 +284,7 @@ aside {
   max-width: 780px;
   background-color: #fff;
   padding: 2rem 4rem;
-  margin: 20px;
+  margin: 16px 20px;
   border-radius: 20px;
 }
 
@@ -111,6 +382,22 @@ aside {
   bottom: -10px;
   right: -10px;
   z-index: 10;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+  cursor: pointer;
+}
+
+.w-chart-grid__active-point:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.w-chart-grid__active-point:hover ~ .w-chart-grid__dist-label {
+  opacity: 1;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
 }
 
 .w-chart-grid__chart-line {
@@ -138,15 +425,18 @@ aside {
 .w-chart-grid__dist-label {
   height: 4rem;
   width: 8rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 4rem;
-  bottom: 1rem;
+  right: -10rem;
+  bottom: -2rem;
   -webkit-box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.13);
   border-radius: 16px;
   padding: .5rem;
   z-index: 10;
+  opacity: 0;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
 }
 
 .w-chart-grid__dist-label::before {
@@ -551,10 +841,8 @@ main .recomend-trainer {
   color: #626262;
 }
 
-
 .trainer-card .rating {
   font-weight: 500;
-
 }
 
 .trainer-card a {
@@ -574,21 +862,28 @@ main .recomend-trainer {
   border-radius: 20px;
 }
 
+.diet-menu hr {
+  background-color: #F4F4F4;
+  height: 1px;
+}
+
+.diet-menu a {
+  color: #0B2A97;
+  font-weight: 600;
+}
+
 .radius1rem {
   border-radius: 1rem !important;
 }
 
 main {
   height: calc(100vh - 5rem);
-}
-
-main .progress-cards {
-  background-color: skyblue;
-  height: 300px;
+  padding-top: 6rem;
 }
 
 body {
   min-width: 1480px;
+  max-width: 1920px;
   background-color: #F5F9F1;
   font-family: 'Poppins', sans-serif;
 }

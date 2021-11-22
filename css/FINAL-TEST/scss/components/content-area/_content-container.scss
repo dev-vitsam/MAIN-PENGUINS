@@ -1,18 +1,18 @@
+@import 'progress-cards';
 @import 'workout-stat-chart';
 @import 'calories-chart';
 @import 'recomend-trainer';
 @import 'diet-menu';
 
-
 //temp css
 main {
     height: calc(100vh - 5rem);
+    padding-top: 6rem;
 
-
-    .progress-cards {
-        background-color: skyblue;
-        height: 300px;
-    }
+    // .progress-cards {
+    //     background-color: skyblue;
+    //     height: 300px;
+    // }
     //.workout-stat {
         //background-color: rgb(82, 167, 201);
         //height: 300px;

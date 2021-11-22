@@ -1,6 +1,14 @@
 .diet-menu {
     margin: 0 0 20px 0;
     border-radius: 20px;
+    hr {
+        background-color: #F4F4F4;
+        height: 1px;
+    }
+    a {
+        color: #0B2A97;
+        font-weight: 600;
+    }
 }
 .radius1rem {
     border-radius: 1rem !important;
